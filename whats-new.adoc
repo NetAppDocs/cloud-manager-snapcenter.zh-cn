@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
+summary: 了解 <service> 中的新增功能。 
+---
+= SnapCenter 服务的新增功能
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解 SnapCenter 服务的新增功能。
+
+
+
+== 2021 年 12 月 21 日
+
+
+
+=== Apache Log4j 漏洞的修复
+
+SnapCenter 服务 1.0.1 将 Apache Log4j 从 2.9.1 版升级到 2.17 版，以解决以下漏洞： CVE-2021-44228 ， CVE-2021-4104 和 CVE-2021-45105 。
+
+SnapCenter 服务集群应自动更新到最新版本。您应确保 SnapCenter 服务 UI 中的版本显示集群为 1.0.1.1251 或更高版本。
+
+
+
+== 2021 年 10 月 13 日
+
+
+
+=== 支持 SnapCenter 服务 1.0.0
+
+* SnapCenter 服务可为在 NetApp ® 云存储上运行的应用程序提供数据保护功能。在 NetApp Cloud Manager 中启用的 SnapCenter 服务可为驻留在 Azure NetApp Files （ ANF ）上的 SAP HANA ® 系统提供高效，应用程序一致且基于策略的备份和还原。
++
+link:concept-overview-architecture-limitation-functionalities-snapcenter-service.html["了解 SnapCenter 服务"]
+
+* 您应创建一个连接器，启用 SnapCenter 服务，添加 SAP HANA 系统，然后执行备份和还原操作。
++
+link:task-get-started-snapcenter-service.html["入门"]
+
+

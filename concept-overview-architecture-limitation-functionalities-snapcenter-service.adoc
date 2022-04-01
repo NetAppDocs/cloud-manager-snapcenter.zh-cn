@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: concept-overview-architecture-limitation-functionalities-snapcenter-service.html 
+keywords: snapcenter service, data protection, SAP HANA, Azure NetApp Files, cloud manager, azure kubernetes service, limitation, functionalities 
+summary: SnapCenter 服务可为在 NetApp ® 云存储上运行的应用程序提供数据保护功能。 
+---
+= 了解 SnapCenter 服务
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter 服务可为在 NetApp ® 云存储上运行的应用程序提供数据保护功能。NetApp Cloud Manager 中启用的 SnapCenter 服务可为 Azure NetApp Files 上的 SAP HANA ® 系统提供高效，应用程序一致且基于策略的备份和还原。
+
+
+
+== 架构
+
+SnapCenter 服务的架构包括以下组件。
+
+* SnapCenter 服务 UI 与 Cloud Manager UI 集成在一起。
++
+SnapCenter 服务 UI 可通过由 NetApp 管理的 Cloud Manager SaaS 框架提供，该框架可提供多种存储和数据管理功能。
+
+* Cloud Manager Connector 是 Cloud Manager 的一个组件，用于管理 SnapCenter 服务和其他几项服务的生命周期。
+* SnapCenter 服务是一组托管在 Azure Kubernetes Service （ AKS ）上的数据保护服务，用于编排数据保护工作流。
+
+
+
+NOTE: Cloud Manager 连接器和 SnapCenter 服务部署在您的云网络中。
+
+下图显示了 SnapCenter 服务的每个组件之间的关系：
+
+image:anf-architecture.png["SnapCenter 服务架构。"]
+
+对于任何用户发起的请求， SnapCenter 服务 UI 都会与云管理器 SaaS 进行通信，在验证请求后，云管理器 SaaS 会将此调用转发到云管理器连接器。然后，连接器会与 SnapCenter 服务进行通信，而 SnapCenter 服务会调用 Azure NetApp Files 管理 API 和 HANA 系统命令来执行数据保护操作。
+
+SnapCenter 服务可以部署在与 HANA 系统相同的 vNet 中，也可以部署在不同的 vNet 中。如果 SnapCenter 服务和 HANA 系统位于不同的网络上，则应在它们之间建立网络连接。
+
+
+
+== 支持的功能
+
+SnapCenter 服务支持以下功能。
+
+* 添加 SAP HANA 系统
+* 备份 SAP HANA 系统
++
+** 既支持基于快照的备份，也支持基于文件的备份
+** 支持 SAP HANA 系统的按需备份
+** 支持使用系统定义的策略或自定义策略对 SAP HANA 系统进行计划备份
++
+您可以在策略中指定不同的计划频率，例如每小时，每天，每周和每月。
+
+** 支持备份非数据卷和全局非数据卷
+
+
+* 根据策略保留备份
+* 从用户指定的备份还原 SAP HANA 系统
+* 监控备份和其他作业
+* 管理 HANA 系统上的数据和日志备份目录
+* 在信息板上显示保护摘要，配置详细信息和作业状态
+* 通过电子邮件发送警报
+
+
+
+
+== 限制
+
+SnapCenter 服务 1.0 具有以下限制。
+
+* 不支持国际化，您应使用英语浏览器。
+* 只有具有 " 帐户管理员 " 角色的 Cloud Manager 用户才能启用 SnapCenter 服务。
+* 与 Azure Kubernetes Service （ AKS ）集群节点故障相关的限制
++
+** 在 AKS 集群中，如果其中一个节点脱机，正在运行的作业可能会失败，但后续作业将被执行。
+** 在 AKS 集群中，如果其中一个节点发生故障，您将无法添加 SAP HANA 系统，但其他操作将在没有任何问题描述的情况下运行。
++
+您应启动节点以添加 HANA 系统。
+
+** 计划程序不支持高可用性配置。
++
+如果计划程序使用的 MySQL 节点发生故障，您应启动该节点以继续执行计划的操作。
+
+
+
+

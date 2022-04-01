@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="34121089909a31947c54129b515d4b5f" category="summary">您可以监控已执行作业的状态，接收电子邮件通知以及查看信息板。</block>
+  <block id="41b4e5d916e26c9e0d32ceff6fd589ed" category="doc">管理操作</block>
+  <block id="4639d0e2e2909a747265c2f704128bca" category="section-title">监控作业</block>
+  <block id="f593149ce73a2c77bd9c3ad43f6f72b2" category="paragraph">单击 SnapCenter 服务页面上的 * 作业监控 * 以查看作业状态。作业监控页面将显示整体摘要并列出所有作业。</block>
+  <block id="fa1c9e28106b05f396bc61c0675e095e" category="inline-image-macro">图标的屏幕截图，用于查看详细信息</block>
+  <block id="7088b8034cb794350a5fc5ef129274bb" category="paragraph">然后，您可以单击 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 对应于特定作业以查看详细信息。</block>
+  <block id="ecec91844d8e95643f8ddacd181ec4c0" category="inline-image-macro">作业监控器页面的屏幕截图</block>
+  <block id="848be2be6f65cefa3d81956ea8872d39" category="paragraph"><block ref="848be2be6f65cefa3d81956ea8872d39" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c974e2366aaf03c2ef4696101c8d7f62" category="section-title">电子邮件通知</block>
+  <block id="f9e6436ca6616e01b0447d5324d7cb64" category="paragraph">默认情况下，对于失败的按需备份，计划的备份和还原操作，系统会发送电子邮件通知。只有具有 " 帐户管理员 " 角色的 Cloud Manager 用户才会收到此电子邮件。</block>
+  <block id="fea84990764109b117844dae6e7232a7" category="section-title">查看信息板</block>
+  <block id="f3f9b42bf5249ca96d1002dd6a400489" category="paragraph">单击 SnapCenter 服务页面上的 * 概述 * 以查看保护摘要，配置详细信息和作业状态。</block>
+  <block id="d93b727eea86e7cfe22810ad4d54d6fe" category="inline-image-macro">信息板的屏幕截图</block>
+  <block id="1c1aa7efcf441f4b4084baa7c289a9da" category="paragraph"><block ref="1c1aa7efcf441f4b4084baa7c289a9da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e7cfd9476b70a39fe06e26c19f27e8d4" category="summary">了解 &lt;service&gt; 中的新增功能。</block>
+  <block id="6af4ad198ad0d68e7e5efb1b62491163" category="doc">SnapCenter 服务的新增功能</block>
+  <block id="e7481530c4cf2aa274134d89c42b9e40" category="paragraph">了解 SnapCenter 服务的新增功能。</block>
+  <block id="5e057a1bffc9bad13fd5567d9b86dd0b" category="section-title">2021 年 12 月 21 日</block>
+  <block id="b59fdb8f9fe5a28d08cd50bf85b70880" category="section-title">Apache Log4j 漏洞的修复</block>
+  <block id="6b6f87c741f6734b4908d03d2c21e449" category="paragraph">SnapCenter 服务 1.0.1 将 Apache Log4j 从 2.9.1 版升级到 2.17 版，以解决以下漏洞： CVE-2021-44228 ， CVE-2021-4104 和 CVE-2021-45105 。</block>
+  <block id="ae1f9a5afbc7e02967d7f7e643135d82" category="paragraph">SnapCenter 服务集群应自动更新到最新版本。您应确保 SnapCenter 服务 UI 中的版本显示集群为 1.0.1.1251 或更高版本。</block>
+  <block id="8dc0422412ec550e4062c55e01a38bdf" category="section-title">2021 年 10 月 13 日</block>
+  <block id="c83ebe5a7133a377b69bf636c6a38972" category="section-title">支持 SnapCenter 服务 1.0.0</block>
+  <block id="49d75fd1ab909bc01be79453066d9eed" category="list-text">SnapCenter 服务可为在 NetApp ® 云存储上运行的应用程序提供数据保护功能。在 NetApp Cloud Manager 中启用的 SnapCenter 服务可为驻留在 Azure NetApp Files （ ANF ）上的 SAP HANA ® 系统提供高效，应用程序一致且基于策略的备份和还原。</block>
+  <block id="fbfdf1d6957e93185289dd5c3d913313" category="inline-link-macro">了解 SnapCenter 服务</block>
+  <block id="135197b35874749c250f6afa57f0ff27" category="paragraph"><block ref="135197b35874749c250f6afa57f0ff27" category="inline-link-macro-rx"></block></block>
+  <block id="0e5d1d663ddc19adea8b1572c120bb29" category="list-text">您应创建一个连接器，启用 SnapCenter 服务，添加 SAP HANA 系统，然后执行备份和还原操作。</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="inline-link-macro">入门</block>
+  <block id="54618d81cd5e2ddaf94c957f9a469733" category="paragraph"><block ref="54618d81cd5e2ddaf94c957f9a469733" category="inline-link-macro-rx"></block></block>
+  <block id="57ee7a6bafea27c646cb01aafe7dd10b" category="summary">SnapCenter 服务可为在 NetApp ® 云存储上运行的应用程序提供数据保护功能。</block>
+  <block id="2857bf9cdb09e82d142fcf8c75e3dddd" category="paragraph">SnapCenter 服务可为在 NetApp ® 云存储上运行的应用程序提供数据保护功能。NetApp Cloud Manager 中启用的 SnapCenter 服务可为 Azure NetApp Files 上的 SAP HANA ® 系统提供高效，应用程序一致且基于策略的备份和还原。</block>
+  <block id="2d242bb36ec91b32005f9296ff03a912" category="section-title">架构</block>
+  <block id="513a2390db98d4f0ba37da28a7d1587d" category="paragraph">SnapCenter 服务的架构包括以下组件。</block>
+  <block id="0cb78051937dcdfa481a00adfe92b44c" category="list-text">SnapCenter 服务 UI 与 Cloud Manager UI 集成在一起。</block>
+  <block id="5e402e5733f23466f909b4dddce5ce9d" category="paragraph">SnapCenter 服务 UI 可通过由 NetApp 管理的 Cloud Manager SaaS 框架提供，该框架可提供多种存储和数据管理功能。</block>
+  <block id="c62eff60a207d361457d7988554c47e9" category="list-text">Cloud Manager Connector 是 Cloud Manager 的一个组件，用于管理 SnapCenter 服务和其他几项服务的生命周期。</block>
+  <block id="0b9e0b328d8020e082a1f884358906c1" category="list-text">SnapCenter 服务是一组托管在 Azure Kubernetes Service （ AKS ）上的数据保护服务，用于编排数据保护工作流。</block>
+  <block id="d661ac57836862a50ff660a3a5ef7050" category="admonition">Cloud Manager 连接器和 SnapCenter 服务部署在您的云网络中。</block>
+  <block id="598cf35ade704319b9e8bddff2c8ceed" category="paragraph">下图显示了 SnapCenter 服务的每个组件之间的关系：</block>
+  <block id="d93e5f790e67aaca6355f62dc92171a9" category="inline-image-macro">SnapCenter 服务架构。</block>
+  <block id="b80b3f02255d5bb643bacaa5ec3b9b88" category="paragraph"><block ref="b80b3f02255d5bb643bacaa5ec3b9b88" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ffc5a4c8a65021a0092a0cc880066de3" category="paragraph">对于任何用户发起的请求， SnapCenter 服务 UI 都会与云管理器 SaaS 进行通信，在验证请求后，云管理器 SaaS 会将此调用转发到云管理器连接器。然后，连接器会与 SnapCenter 服务进行通信，而 SnapCenter 服务会调用 Azure NetApp Files 管理 API 和 HANA 系统命令来执行数据保护操作。</block>
+  <block id="cc5d9a3e5390dceaaf6d51e30e25ac34" category="paragraph">SnapCenter 服务可以部署在与 HANA 系统相同的 vNet 中，也可以部署在不同的 vNet 中。如果 SnapCenter 服务和 HANA 系统位于不同的网络上，则应在它们之间建立网络连接。</block>
+  <block id="e277e42688a9f44945fa8c1919bab726" category="section-title">支持的功能</block>
+  <block id="7fca755928420c21cb693a0ea4c54420" category="paragraph">SnapCenter 服务支持以下功能。</block>
+  <block id="0660503bc6f812546b833599898cf6e1" category="list-text">添加 SAP HANA 系统</block>
+  <block id="045ef90684cdf66906481582d855554f" category="list-text">备份 SAP HANA 系统</block>
+  <block id="6614abf565ef618b3fb893bc313b5936" category="list-text">既支持基于快照的备份，也支持基于文件的备份</block>
+  <block id="0fd447bf0e43ac440f4e8620830036c9" category="list-text">支持 SAP HANA 系统的按需备份</block>
+  <block id="2c923a35a6614e72e23a7f3acaec0d32" category="list-text">支持使用系统定义的策略或自定义策略对 SAP HANA 系统进行计划备份</block>
+  <block id="4daab712a81f483acc692f943dfe93d2" category="paragraph">您可以在策略中指定不同的计划频率，例如每小时，每天，每周和每月。</block>
+  <block id="5b97833b94f74584fbcc067437967b7f" category="list-text">支持备份非数据卷和全局非数据卷</block>
+  <block id="6e8413d03b75fe5c129c80ecf66704ec" category="list-text">根据策略保留备份</block>
+  <block id="d425231015105a09e4350149bbaf024c" category="list-text">从用户指定的备份还原 SAP HANA 系统</block>
+  <block id="60d9a229099000fec5710894db8b263b" category="list-text">监控备份和其他作业</block>
+  <block id="c8ed27e18f0091672a5371f0280b6317" category="list-text">管理 HANA 系统上的数据和日志备份目录</block>
+  <block id="0ef1d9e4301aa4044b0bf2a6379c6a24" category="list-text">在信息板上显示保护摘要，配置详细信息和作业状态</block>
+  <block id="2dbc045edb5a2f6faf0c411d7f5f750f" category="list-text">通过电子邮件发送警报</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
+  <block id="8f2191123e919410a80a597629962d59" category="paragraph">SnapCenter 服务 1.0 具有以下限制。</block>
+  <block id="e4b3550f0d9c607881ab2370e1a387ad" category="list-text">不支持国际化，您应使用英语浏览器。</block>
+  <block id="e5f8d4769a63109ecb2722c68e03ff0b" category="list-text">只有具有 " 帐户管理员 " 角色的 Cloud Manager 用户才能启用 SnapCenter 服务。</block>
+  <block id="074f7e44ec062bc40b2a28831094e8b0" category="list-text">与 Azure Kubernetes Service （ AKS ）集群节点故障相关的限制</block>
+  <block id="d65bac40c733be290764cfa1afcd0028" category="list-text">在 AKS 集群中，如果其中一个节点脱机，正在运行的作业可能会失败，但后续作业将被执行。</block>
+  <block id="01f43c13339561a534e9d1c6e9596cbe" category="list-text">在 AKS 集群中，如果其中一个节点发生故障，您将无法添加 SAP HANA 系统，但其他操作将在没有任何问题描述的情况下运行。</block>
+  <block id="84dee3e862191038e6eafc735f16f8bc" category="paragraph">您应启动节点以添加 HANA 系统。</block>
+  <block id="7b1d0a7b2fe33ab114a0bad8a36c2028" category="list-text">计划程序不支持高可用性配置。</block>
+  <block id="5e526f6e213483b562087f07e477b924" category="paragraph">如果计划程序使用的 MySQL 节点发生故障，您应启动该节点以继续执行计划的操作。</block>
+  <block id="ce21e7ae4271271294ccbf54c8fd6864" category="summary">NetApp 通过多种方式为 Cloud Manager 提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">获取帮助</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link-macro"></block>
+  <block id="7ccaf84febc0ed633fbdbadb8d488a7e" category="paragraph"><block ref="7ccaf84febc0ed633fbdbadb8d488a7e" category="inline-link-macro-rx"></block></block>
+  <block id="fab4191c3282be9232a1f75270ad2e77" category="summary">在创建连接器和启用 SnapCenter 服务之前，请确保满足前提条件。</block>
+  <block id="0d2207ddfa0465f7fdc075a16c7103c2" category="doc">创建连接器和启用 SnapCenter 服务的前提条件</block>
+  <block id="c0765d49289193632cbeb8f73e33c513" category="paragraph">在 Azure 中创建连接器并启用 SnapCenter 服务之前，您应确保满足某些要求。</block>
+  <block id="d895b712b3b71cc40eb2a7d81a7d98c1" category="list-text">确保为 Connector 选择的子网不应与为 Azure Kubernetes Service （ AKS ）预留的以下 IP 地址范围重叠： 169.254.0.0/16 ， 172.30.0.0/16 ， 172.31.0.0/16 和 192.0.2.0/24 。</block>
+  <block id="649ede51d8c8c14a5e4e777f24caada1" category="list-text">确保选定子网中未运行任何 AKS 。</block>
+  <block id="078e3debfd8d4cacff33f8a37fbedd67" category="list-text">确保所选子网可以通过相应的端口访问 SAP HANA 系统。</block>
+  <block id="cd8147d7e135b3f48f9894be4ece54ae" category="list-text">如果所选子网的 vNet 与 SAP HANA 系统的 vNet 不同，请确保 VNets 可以通过 VPN 网关，对等或其他方式彼此通信。</block>
+  <block id="de852f7cca61372fa7c7ccbc0dd82e43" category="list-text">如果要在防火墙后启用 SnapCenter 服务，应执行中所述的操作 <block ref="68fbd50b94d97a9277102194b88f11ae" category="inline-xref-macro-rx"></block>。</block>
+  <block id="6d9f088dc89f4a4aeadbeef6d90ff1b1" category="paragraph">您应事先确定是否要在防火墙后启用 SnapCenter 服务。启用 SnapCenter 服务后，您无法将其配置为在防火墙后运行。这是一个 AKS 限制。</block>
+  <block id="bdd8837c5f5666c1f37ec05326aa385f" category="section-title">网络要求</block>
+  <block id="1779c5257c3a2a3721afa88583df89ff" category="paragraph">设置您的网络，以便 Connector 可以管理云环境中的资源和流程。</block>
+  <block id="7b5ab8d4f5391ce5b1dfdc1f7332745e" category="section-title">防火墙配置</block>
+  <block id="81a2acf3e6167e34cd699935444b3487" category="paragraph">如果要在防火墙后启用 SnapCenter 服务，应执行以下操作。</block>
+  <block id="ac7071f5d59a4b63a6324710c31a3144" category="admonition">如果您使用的是 Azure 防火墙，则可以使用脚本执行这些步骤。有关信息，请参见 <block ref="0e344aded8c812d6b4469cf9fa62d95a" category="inline-xref-macro-rx"></block>。</block>
+  <block id="4839d2f25cc35b249d5db15efa1afd75" category="paragraph">* 步骤 *</block>
+  <block id="a8d6982cd3fbdb6cb9296d46f8f664ce" category="list-text">将以下网络规则添加到防火墙。</block>
+  <block id="4abc505ff15216e855719ff1190f9129" category="cell">目标端点</block>
+  <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">协议</block>
+  <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">Port</block>
+  <block id="8413c683b4b27cc3f4dbd4c90329d8ba" category="cell">注释</block>
+  <block id="95ff646a131318136e3b364356af9071" category="inline-link">服务标签</block>
+  <block id="c3ad2360b3772057a330b592a5f89b9c" category="cell"><block ref="e36984cf9325fa701aa22032e29b2193" category="inline-link-rx"></block> — AzureCloud 。 &lt; 地区 &gt; ： 1194</block>
+  <block id="f5ef036b4d8b630721e51fe23489fbc9" category="cell">UDP</block>
+  <block id="a42a596fc71e17828440030074d15e74" category="cell">1194.</block>
+  <block id="70cd7986bd7c7fbebca64d1871f45d2f" category="cell">如果您计划使用专用连接器和专用 SnapCenter 服务集群，则不需要此功能。</block>
+  <block id="e7c8d06cef56d0e49ba567fc4afa499b" category="cell"><block ref="e36984cf9325fa701aa22032e29b2193" category="inline-link-rx"></block> — AzureCloud 。 &lt; 地区 &gt; ： 9000</block>
+  <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
+  <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="cell">9000</block>
+  <block id="b6d149452b9fd5e37b58297f7cf3ce17" category="cell">FQDN — ntp.ubuntu.com:123</block>
+  <block id="202cb962ac59075b964b07152d234b70" category="cell">123.</block>
+  <block id="3cc884a2a2698451ca4ddec60e214a3b" category="cell">Azure 虚拟机中的时间同步需要此功能。</block>
+  <block id="78653adbcf922303403b93e578386121" category="cell"><block ref="e36984cf9325fa701aa22032e29b2193" category="inline-link-rx"></block> — AzureCloud 。 &lt; 地区 &gt; ： 443</block>
+  <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443.</block>
+  <block id="0f4c193c7c60bd9a00e57e716b84745e" category="list-text">在防火墙中添加具有以下 FQDN 标记和端口详细信息的应用程序规则：</block>
+  <block id="39a9cf78a3899a808563a113f59510c4" category="list-text">FQDN 标记— AzureKubernetes Service</block>
+  <block id="4e0aa98bae821751635910f38f127bbf" category="list-text">HTTPS ： 443</block>
+  <block id="90214e3af3d565e5e576209ccd3b568d" category="list-text">添加一个应用程序规则，将以下端点作为目标 FQDN ，并将协议和端口设置为 HTTPS ： 443 。</block>
+  <block id="b8724da75fb917e992576b17378e66b3" category="cell">端点</block>
+  <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
+  <block id="cc328ccddf672987f092ca6f44c9f9cf" category="cell">https://management.azure.com https://login.microsoftonline.com</block>
+  <block id="8418435eb29b0823b3e64b30b81cb9d4" category="cell">支持 Cloud Manager 在大多数 Azure 区域部署和管理 Cloud Volumes ONTAP 。</block>
+  <block id="7e42575d1287c35b22447424ad76b6c6" category="cell">https://management.microsoftazure.de https://login.microsoftonline.de</block>
+  <block id="c48bf3751390506e38bd903eec2dc0c9" category="cell">支持 Cloud Manager 在 Azure Germany 地区部署和管理 Cloud Volumes ONTAP 。</block>
+  <block id="67b376950210ebd8b7c9b01244118cb1" category="cell">https://management.usgovcloudapiNet https://login.microsoftonline.com</block>
+  <block id="395c2906b95b841baa6af2c3023e37d6" category="cell">支持 Cloud Manager 在 Azure US Gov 区域部署和管理 Cloud Volumes ONTAP 。</block>
+  <block id="beb16e53b548a5269e5af9de9c6d391d" category="cell">https://api.services.cloud.netpp.com</block>
+  <block id="24ba84c7d78074d10c6d1b8143028abf" category="cell">允许向 NetApp Cloud Central 发出 API 请求。</block>
+  <block id="cc363419596ef971d1cfc93096f69ebe" category="cell">https://cloud.support.netapp.com.s3.us-west-1.amazonaws.com</block>
+  <block id="0f7fc0e257736da2b0e583e49778bf2f" category="cell">提供对软件映像、清单和模板的访问。</block>
+  <block id="d4c81973318a62a51b25ed291b04a0fa" category="cell">https://cognito-idp.us-east-1.amazonaws.com \https://cognito-identity.us-east-1.amazonaws.com \https://sts.amazonaws.com \https://cloud-support-netapp-com-accelerated.s3.amazonaws.com</block>
+  <block id="49f115dd35a8be23d6f483e5ab7c8c1d" category="cell">使 Connector 能够访问和下载清单，模板和 Cloud Volumes ONTAP 升级映像。</block>
+  <block id="9dcb0a1d3281e001a6085626a264be49" category="cell">https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="1b9f42efcf7ffef4d1daf55f12ea8909" category="cell">访问运行 Docker 的基础架构中容器组件的软件映像，并提供解决方案以实现与 Cloud Manager 的服务集成。</block>
+  <block id="c46b9566ce96156ab310817351ef2854" category="cell">https://kinesis.us-east-1.amazonaws.com</block>
+  <block id="3414f3bd5331c7e91fdcac0502875dcb" category="cell">使 NetApp 能够从审计记录流化数据。</block>
+  <block id="115781a0043a85f8707c5c99fd02dc75" category="cell">https://cloudmanager.cloud.netapp.com</block>
+  <block id="e26cb925e48bab5bb2ee58ee723b2677" category="cell">与 Cloud Manager 服务进行通信，其中包括 NetApp 帐户。</block>
+  <block id="300f031c227ed1b4448a8bb51abec2bb" category="cell">https://netapp-cloud-account.auth0.com</block>
+  <block id="cd9bbb2df00a50fb31caf47496bd1afe" category="cell">与 NetApp Cloud Central 进行通信以实现集中式用户身份验证。</block>
+  <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">https://support.netapp.com</block>
+  <block id="09e16c84de2d84cfe996c648810bb86e" category="cell">与 NetApp AutoSupport 通信。</block>
+  <block id="c384191d9c0ac29b941a0cb1ecefdb33" category="cell">https://cloud-support-netapp-com.s3.us-west-1.amazonaws.com</block>
+  <block id="07c166aca47c65ea90c6b4920d6f5238" category="cell">与 NetApp 沟通以获得系统许可和支持注册。</block>
+  <block id="d55a44e3e50c967211a7ba30769f882b" category="cell">https://client.infra.support.netapp.com.s3.us-west-1.amazonaws.com \https://cloud-support-netapp-com-accelerated.s3.us-west-1.amazonaws.com</block>
+  <block id="4bbfae92a0503a50c87d2a06b2b50f3b" category="cell">使 NetApp 能够收集对支持问题进行故障排除所需的信息。</block>
+  <block id="38fe983310530d407e19ffc2b53a62d4" category="cell">* .blob.core.windows.net</block>
+  <block id="5b3f477437c1f9552e24f326a02b0e37" category="cell">使用代理时， HA 对需要此参数。</block>
+  <block id="fdb51f8a262ef532926feb44b010cb72" category="cell">https://auth0.com</block>
+  <block id="a92552df98cc7c22cdbfdace71746996" category="cell">Auth0 身份验证必需。</block>
+  <block id="106221c74a466779b3e9349294fafb42" category="cell">https://registry-1.docker.io \https://auth.docker.io \https://production.cloudflare.docker.com</block>
+  <block id="ba93b2cf835f60c15659402045cad64b" category="cell">检索 SnapCenter 服务工作流引擎的依赖关系。</block>
+  <block id="d442568bc1c240386ded0f1d8a2f0fe6" category="cell">https://exteranl-log.cloudmanager.netapp.com</block>
+  <block id="d5b93712c46b220e3c2ec2d23b1feef5" category="cell">允许通信将日志传输到 Cloud Manager 日志存储库。</block>
+  <block id="bc6992e070d9e1340211ed3471c0b114" category="list-text">选择要安装 SnapCenter 服务的子网。</block>
+  <block id="e8dbaa0ff37377c7340b96045fd91935" category="list-text">使用路由创建路由表：</block>
+  <block id="d0291b23b73320fe3ebf3534ec7af3ea" category="list-text">将流量从子网转发到防火墙内部 IP 地址</block>
+  <block id="9e4cfd7ef75c01c5ac965cb1ba1bac37" category="list-text">将流量从防火墙公有 IP 地址转发到 Internet 。</block>
+  <block id="4bef0203103722e65f656f8c35646b87" category="list-text">将路由表附加到子网。</block>
+  <block id="7ebcb503cdda50b6cfafe4b188689a5c" category="inline-link">连接器的网络连接要求</block>
+  <block id="d9b18cee7a313ead74dd7a023666ffa9" category="paragraph">有关 Cloud Manager Connector 的网络要求的信息，请参见<block ref="57f818e1db49e293a718988eb6d733d8" category="inline-link-rx"></block>。</block>
+  <block id="ca3fae953ace3814f44551f58d2984bf" category="section-title">Azure 防火墙配置</block>
+  <block id="bd114f893a39a34dfb70d101f6cc8d27" category="paragraph">如果要在 Azure 防火墙后启用 SnapCenter 服务，应执行以下操作。</block>
+  <block id="d428ebb7ac02e1484781b38a799a4f99" category="paragraph">* 您需要的内容 *</block>
+  <block id="3f542b45e89ad1bf8724f107638c51b8" category="list-text">您应已创建防火墙（经典模式）。</block>
+  <block id="68507bbad35dc0ac17872d2839fd06b8" category="list-text">您应已为 SnapCenter 服务创建 vNet 和子网。</block>
+  <block id="f8f9291d183aee85540a5ac1861dfbd3" category="list-text">如果您的防火墙资源和 SnapCenter 服务的 vNet 位于不同的租户中，则应登录到 Azure Shell 中的两个租户。</block>
+  <block id="54c016a1d891dc30439989dbae8027e8" category="list-text">如果您的防火墙 vNet 和 SnapCenter vNet 不同，则应在 VNet 之间建立对等关系。</block>
+  <block id="8b5181a0b2fc5bd5523b1cbbe0f65c94" category="inline-link-macro">scs_azure_firewall_config.sh</block>
+  <block id="f593996d6386a4a5d25414318ff9b2e7" category="list-text">下载 <block ref="984e53de2fde74764f8c34aa53659aa0" category="inline-link-macro-rx"></block> 脚本到本地系统。</block>
+  <block id="26d0a1022b03f4ffe6de4d98e6a49cc2" category="inline-link">Microsoft Azure 门户</block>
+  <block id="f0516e5c83e81b0be819d2e49967b8ef" category="list-text">登录到<block ref="be05a730e7fbdc2cc6504fccb0d15d76" category="inline-link-rx"></block>。</block>
+  <block id="db75ad7e6f88c58f5b77ff9699190c20" category="inline-image-macro">Azure Cloud Shell 的屏幕截图</block>
+  <block id="cb9c4e33773bbb43c0f31fb324c6397c" category="list-text">单击 <block ref="675928dc3c407a9d792f8097bea153a3" category="inline-image-macro-rx" type="image"></block> 打开云 Shell 并选择 Bash 控制台。</block>
+  <block id="c1e10f9d2da10dd930a016278cd69bde" category="list-text">将脚本上传到 Azure Cloud Shell 。</block>
+  <block id="3dd3a2392b429c72b9b402e9f78a5669" category="list-text">分配运行脚本的权限。</block>
+  <block id="d082ae86359d86afc2e67be3c976c1e7" category="paragraph">`chmod +x ./SCS_azure_firewall_config.sh`</block>
+  <block id="3ffb93c401d278c605ef87fdc061d339" category="list-text">运行脚本。</block>
+  <block id="5e944bef96e94a4fd284f8ff552cc980" category="paragraph">` 。 /scs_azure_firewall_config.sh -fwsubid &lt;Firewall_SubscriptionID&gt; -fwname &lt;Firewall_name&gt; -fwrg &lt;Firewall_Resource_group&gt; -scssubid &lt;SnapCenter_Service_SubscriptionID&gt; -scsvnet &lt;SnapCenter_Service_vNet_name&gt; -scssubnet &lt;SnapCenter_Service_Subnet _Net_Group&gt; -SnapSC_Service_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM.&lt;SnapCenter&gt; -SC_Service_SVM_`</block>
+  <block id="3e1cdf06b6e1c94898b39731fb1984b5" category="admonition">如果尚未创建资源组，则此脚本将创建该资源组。创建连接器时，您可以使用同一资源组，以便所有与 SnapCenter 服务相关的资源都位于同一资源组中。</block>
+  <block id="03ca1a8893eafac750fe33e2998cfff3" category="paragraph">* 结果 *</block>
+  <block id="4cd50d43661e755192f1183cf08fffe6" category="list-text">已配置防火墙规则。</block>
+  <block id="b9940dcbb39cb931ec7e01152c216680" category="list-text">此时将为 SnapCenter 服务创建一个资源组。</block>
+  <block id="0cd7f89167541f4dfc3d0ddc5aba7779" category="list-text">此时将在 SnapCenter 服务资源组中创建路由表。</block>
+  <block id="bb7c2e8549d0731d851ea33dad892efe" category="list-text">此时将配置路由表规则。</block>
+  <block id="64cd8b6042d8110e333061975441af1e" category="list-text">路由表已连接到子网。</block>
+  <block id="ad84535a3df654cda0c08fa019d4e5b5" category="section-title">连接到 HANA 系统</block>
+  <block id="f50bd4bb3a52b1fc096a38c3ee11de9b" category="paragraph">SnapCenter 服务集群需要使用 HDBSQL 命令与用户网络中的 HANA 系统进行通信。需要允许使用各种网络架构在 SnapCenter 集群和 HANA 系统之间建立通信通道，例如：</block>
+  <block id="c1bb0462c69cfcd7397951f427c95a0c" category="list-text">连接器和 SnapCenter 服务集群部署在与 HANA 系统相同的 vNet 中</block>
+  <block id="e89972518428349c83cbd19f8fea6017" category="list-text">连接器和 SnapCenter 服务集群部署在与 HANA 系统不同的 vNet 中，并使用 vNet 对等在 2 个 vNet 之间建立通信。</block>
+  <block id="19d30c7edc0463303ff849578ac54ad2" category="list-text">连接器和 SnapCenter 服务集群部署在与 HANA 系统不同的 vNet 中，并使用 VPN 网关在 2 个 vNet 之间建立通信。</block>
+  <block id="871d60d74909245287d5217802e93005" category="section-title">安全组配置</block>
+  <block id="8596f5c99acc7cd90c6132e01869d0d2" category="paragraph">如果在 HANA 系统中配置了网络安全组（ Network Security Group ， NSG ），则应允许从 SnapCenter 服务的端口到 HANA 系统的端口进行入站通信，如用户存储密钥中所指定。</block>
+  <block id="199db3d2ec990b3799a83fae55da6046" category="list-text">协议：所有 TCP</block>
+  <block id="d7979f0c56ae2dc86ff6934cdfa42493" category="list-text">子网： SnapCenter AKS 集群子网</block>
+  <block id="5ae4d7e7a456c0cbd29ccef96456bdcf" category="list-text">用途：执行 HDBSQL 命令</block>
+  <block id="ae76e5bba1a2e4e7d2545d2770f0f970" category="paragraph">SnapCenter AKS 集群中运行的 HANA 服务支持与启用了 SSL 的 HANA 系统进行 SSL 通信。</block>
+  <block id="3dc87d09ceccd7dcab8ae39abb6d9c10" category="summary">使用 SnapCenter 管理器 UI 启用 Cloud 服务。</block>
+  <block id="be2ee59845a89af945b9900a0c3b1f67" category="doc">为 Azure NetApp Files 启用 SnapCenter 服务</block>
+  <block id="3a3768e823613248feaad95ceda47f21" category="paragraph">您可以使用 SnapCenter 管理器 UI 启用 Cloud 服务。启用 SnapCenter 服务后，将创建托管 SnapCenter 服务的 Azure Kubernetes Service （ AKS ）集群。</block>
+  <block id="21b9eb1efd8b70406b4d239438045123" category="inline-link">如何注册资源提供程序</block>
+  <block id="4c2916034cfe6a8138586a68380d161c" category="list-text">您应在 Azure 订阅中注册 "microsoft.ContainerService" 资源提供程序。有关信息，请参见<block ref="a5340f0c3f9202a4bfd6638d23ad9a4b" category="inline-link-rx"></block>。</block>
+  <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">前提条件</block>
+  <block id="f5aa07daf663d55fe2d8b5fa0c1158ee" category="list-text">您应确保所有 <block ref="fa07f7c80e3b9954be9b34a08d085342" category="inline-link-macro-rx"></block> 已满足。</block>
+  <block id="78166ce4ccceeedfbf6aeb8682851072" category="paragraph">* 关于此任务 *</block>
+  <block id="22a09b9a7dfc74966da65969b2c367b5" category="paragraph">AKS 集群将在创建 Connector 时选择的同一资源组和子网中创建。如果在创建连接器时未使用公有 IP 地址，则会在专用模式下创建 AKS 集群。</block>
+  <block id="6c359fa681ceea28a725673484924d6b" category="paragraph">要创建和管理 AKS 集群，需要为用户分配具有必要权限的托管身份。此时将创建分配给用户的托管身份，并应将其分配给 Connector VM 。</block>
+  <block id="729cc9d7e54c8d71f7ace34db42226de" category="list-text">Log in to Cloud Manager.</block>
+  <block id="14b5a071cf1b900de8c97da1b8f279f3" category="list-text">选择在 Cloud Manager 中创建的 Connector 。</block>
+  <block id="dfa9b1ee29c2645a689f874096d73396" category="paragraph">确保 Connector 与要保护的 SAP HANA 系统建立了网络连接。</block>
+  <block id="283f9473eb9458de0fd9adf0fab78b5b" category="list-text">单击 * 所有服务 * &gt; * SnapCenter * &gt; * 启用 * 。</block>
+  <block id="40827a860546af59127b7a2ff41eb4ce" category="list-text">执行以下操作之一：</block>
+  <block id="ae1d1de7c751935ee6ce99a819d419b5" category="list-text">如果您已从 Cloud Manager UI 创建连接器，并且您有权创建和分配角色，则 SnapCenter 服务安装会自动创建分配给用户的托管身份。</block>
+  <block id="835dd5163f5fb3fc890b98aa6ffe6c7c" category="list-text">选择 * 使用 Azure 登录 * 。</block>
+  <block id="401c69da1c246a377a45bd698a89743b" category="list-text">在 Get Ready 页面上，单击 * 继续 * 。</block>
+  <block id="96bcfaa3a489189358b155804a699cc2" category="list-text">指定 Azure 凭据。</block>
+  <block id="739c3add6b56e3f81cd753c439799b73" category="admonition">您应确保 Azure 登录帐户具有足够的权限。有关权限以及如何分配权限的信息，请参见 <block ref="4f9b67529ab7a758217700811268efd3" category="inline-xref-macro-rx"></block>。</block>
+  <block id="a7f9f10826bede906b76e11a793ae7b4" category="list-text">如果您已从 Azure Marketplace 创建 Connector ，或者您无权创建和分配角色，请按照以下步骤创建用户分配的托管身份。</block>
+  <block id="a331f81ba0072140f25008971dba85b6" category="list-text">选择 * 使用 Azure 命令行界面脚本 * 。</block>
+  <block id="53aa3641eeadb7426fdd8e46cccc2890" category="list-text">如果您对 Azure 帐户没有足够的权限，请联系您的管理员。</block>
+  <block id="8210452993bff6e60f44de83bd5f33b1" category="paragraph">有关权限以及如何分配权限的信息，请参见 <block ref="4f9b67529ab7a758217700811268efd3" category="inline-xref-macro-rx"></block>。</block>
+  <block id="9d244729a97a8bd02265b2e65094db39" category="inline-link-macro">prerequisite_azure.sh</block>
+  <block id="8f312c3506d7b080031c7d0ef575198f" category="list-text">下载 <block ref="9ffe7367cb8a4adc774ad11fd0691faa" category="inline-link-macro-rx"></block> 脚本到本地系统。</block>
+  <block id="2f7c8d262b548b8e2c88a780efe067aa" category="paragraph">`chmod +x ./prerequise_azure.sh`</block>
+  <block id="fc784b0e571a669db1509478d57ebb67" category="paragraph">` 。 /prerequisite_azure.sh -s &lt;subscription_ID&gt; -g &lt;connector_resourcegroup_name&gt; -c &lt;connector_vm_name&gt;`</block>
+  <block id="2b4cec00b067bdd9cc6219e54c5807d2" category="list-text">在集群配置页面上，执行以下操作：</block>
+  <block id="5b2162e403c24f290faaead7038f6524" category="list-text">选择集群配置。</block>
+  <block id="b5928486b41345234027e86c0adaafdf" category="list-text">如果选择 * 高可用性 * ，则会在可用区域中创建一个包含 3 个工作节点的 Azure Kubernetes Service （ AKS ）集群。</block>
+  <block id="0e5a823d6ecc4b327d8160aaf73c84d4" category="list-text">如果选择 * 单节点 * ，则会创建一个具有单节点的 AKS 集群。</block>
+  <block id="57f52c63cf91b6d1a43ad73714de5b9d" category="list-text">指定 Kubernetes Pod 地址范围。</block>
+  <block id="33ec1cf7929473390c2e32c3b9ac7b45" category="paragraph">确保 Kubernetes Pod 地址范围不会与所连接的虚拟网络，对等虚拟网络和内部网络的 IP 范围重叠。此外，此范围不应与服务地址范围和 Docker 网桥地址重叠。</block>
+  <block id="a1ac022551c874ff0da8334e3ba7eeaf" category="list-text">指定 Kubernetes Service 地址。</block>
+  <block id="a1fdd03364b6f7baf683cd7d60608599" category="paragraph">确保 Kubernetes 服务地址范围不会与所连接的虚拟网络，对等虚拟网络和内部网络的 IP 范围重叠。此外，此范围不应与 Pod 地址范围和 Docker 网桥地址重叠。</block>
+  <block id="380faeff04d1f2e081b62a6f940a4349" category="list-text">指定 Docker 网桥网络。</block>
+  <block id="2d24f9b2445554ae4201ce2f216890c0" category="paragraph">确保 Docker 网桥地址不会与所连接的虚拟网络，对等虚拟网络和内部网络的 IP 范围重叠。此外，此范围不应与 Pod 地址范围和服务地址范围重叠。</block>
+  <block id="cb49c5d9ce3127199979ee9d77d83c46" category="list-text">如果在创建连接器时不使用公有 IP ，并且您正在 vNet 上使用自定义 DNS 服务器，请选择 * 支持自定义 DNS 服务器 * 。</block>
+  <block id="8084bd1bc1db48d72b61e770f4c739ab" category="admonition">您应在专用 DNS 区域中为托管自定义 DNS 服务器的 VN 创建虚拟网络链接。专用 DNS 区域名称和资源组名称将显示在用户界面上。</block>
+  <block id="18622b192aba11482b2e7bb448c9e341" category="list-text">在 Review 页面上，查看详细信息并单击 * 启用 * 。</block>
+  <block id="88f6bf6f180f305019de968f8e4ed04b" category="list-text">成功启用 SnapCenter 服务后，单击 * 完成 * 。</block>
+  <block id="f3591f8ec2bce4141c70e25d03099af0" category="inline-image-macro">图标的屏幕截图，用于查看集群详细信息</block>
+  <block id="b1d432ac0467bad7286587b69ab3bdf4" category="list-text">成功启用 SnapCenter 服务后，将创建 AKS 集群。您可以单击来查看 AKS 集群详细信息 <block ref="0ccef70ccec4e6668bd069bc9e450b90" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="05a60c66a7fd4fe205dc483ec105ae26" category="admonition">如果无法启用 SnapCenter 服务，则可以修复此问题描述并单击 * 重试 * 。</block>
+  <block id="0cbadb2e572556f20e7c908d946b29d0" category="list-text">创建分配给用户的托管身份后，该身份将分配给自定义角色。</block>
+  <block id="c51a9cf78ee307575a6f3bd555b7121c" category="list-text">分配给用户的托管身份将分配给在 Connector 资源组范围内具有以下权限的自定义角色：</block>
+  <block id="ed88aa6f0446d738dc637a49b8caf9c2" category="list-text">分配给用户的托管身份将分配给在 Connector 的 vNet 范围内具有以下权限的自定义角色：</block>
+  <block id="a5638f3ad3dae0022a2003cc25ae9c89" category="list-text">如果在子网上配置路由表以路由到防火墙，则分配给用户的托管身份将分配给路由表范围内具有以下权限的自定义角色。</block>
+  <block id="4bc6c96275f3ce20b2e5a8db5c39cb74" category="list-text">如果安装的 Connector 不使用公有 IP ，则分配给用户的托管身份将分配给专用 DNS 区域范围内具有以下权限的自定义角色。</block>
+  <block id="06f23eb1a1134b1c02b3e5511ca0107f" category="section-title">Azure 登录帐户所需的权限</block>
+  <block id="f22722d582b39bf0aca5980b3ef8b95d" category="paragraph">Azure 登录帐户用于创建分配给用户的托管身份，所需角色以及将此身份分配给 Connector VM 。</block>
+  <block id="9dc3609645e42b94243c54ac097b1e77" category="admonition">登录帐户的凭据不会存储在 SnapCenter 服务的任何位置，也不会用于调用 API 。这些凭据仅在 UI 中使用。</block>
+  <block id="93c163b15cfb7ccd86bd3f8dd66ca760" category="inline-link-macro">SnapCenter_Deployment_Role1.json</block>
+  <block id="0c867b8155e040c3f303496add1c3fdf" category="list-text">使用创建自定义角色 <block ref="2111e9e93105bc298bf796f8171372d5" category="inline-link-macro-rx"></block> 文件</block>
+  <block id="e90d2c1e3768308d55a5ed4d8016c4c3" category="paragraph">您应将 SnapCenter_Deployment_Role1.json 文件中的 &lt;subscription_ID&gt; 替换为 Azure 订阅 ID 。</block>
+  <block id="1ed30b0b57384e6bef75baaf6608d5fb" category="list-text">将角色分配给 Connector 资源组范围内的登录帐户。</block>
+  <block id="81cd305ef2319ed6c3dd14d5dd76a921" category="inline-link-macro">SnapCenter_Deployment_Rol2.json</block>
+  <block id="912e8982329b63124135cef9881bd821" category="list-text">使用创建自定义角色 <block ref="d337ff2da621ff11490eb6f8cb0173a7" category="inline-link-macro-rx"></block> 文件</block>
+  <block id="6611c5f39a8fae0c5e592c3cc4850846" category="paragraph">您应将 SnapCenter_Deployment_Rol2.json 文件中的 &lt;subscription_ID&gt; 替换为 Azure 订阅 ID 。</block>
+  <block id="254d2168d6d9ce9105b32189aad036b3" category="list-text">在 Connector 的 vNet 或更高版本范围内将角色分配给登录帐户。</block>
+  <block id="a3db22cc7ee9cfa8f883484c38d89f90" category="inline-link-macro">已配置防火墙</block>
+  <block id="9a1ed59d7570d4de6470ea767eeb7f82" category="inline-link-macro">SnapCenter-Deployment-Role3.json</block>
+  <block id="0b8501c03d9c3136dd6a3f90d8614040" category="list-text">如果您有 <block ref="09036d0bd433a6fa5406987241a1d942" category="inline-link-macro-rx"></block>，使用创建自定义角色 <block ref="6974f979e7898349c6b14a2fd521e98a" category="inline-link-macro-rx"></block> 文件</block>
+  <block id="441a9f1e64f137fbeac0669186a438f6" category="paragraph">您应将 SnapCenter_Deployment_Role3.json 文件中的 &lt;subscription_ID&gt; 替换为 Azure 订阅 ID 。</block>
+  <block id="c188b8c4b880533d8efaca0cd06edd53" category="list-text">在连接到 SnapCenter 子网的路由表范围内，将角色分配给登录帐户。</block>
+  <block id="80ace30f4a5ad9e66d33455c2949e4aa" category="summary">从该系统的备份之一还原 SAP HANA 系统。</block>
+  <block id="561178b3be2b611f86295fc5c91ca21c" category="doc">还原 SAP HANA 系统</block>
+  <block id="608dee0e471fafc62982a8fc2ea89662" category="paragraph">如果数据丢失，请从该系统的备份之一还原 SAP HANA 系统。</block>
+  <block id="c808f322e55451003355f85842325011" category="paragraph">仅支持存储还原。在还原之前，应使用 SAP HANA Studio 或 SAP HANA Cockpit 将 HANA 系统置于恢复模式，因为不支持 HANA 系统恢复。</block>
+  <block id="95415a5ebf2eecc6c77c0e77e8a9034c" category="list-text">在 SnapCenter 服务页面上，单击 * SAP HANA 系统 * 。</block>
+  <block id="4a5394ba89b62cf1d84de8e76e5e7cd8" category="paragraph">此时将显示添加到 SnapCenter 服务的系统。</block>
+  <block id="4900f377e39a7c49e2c9d2818a37d859" category="list-text">单击 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 与要还原的系统对应。</block>
+  <block id="27be1f7730b5fc62f196facd94dde688" category="list-text">单击 * 查看备份 * 。</block>
+  <block id="301dd0e62597cfc47611b83ff0e5f2c3" category="list-text">在备份部分中，单击 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 对应于要用于还原系统的备份。</block>
+  <block id="357a35aedd0c37deb3a881df778a9bb4" category="list-text">单击 * 还原 * 。</block>
+  <block id="74e99ef8198508661ded8d78a5dd22bf" category="list-text">查看此消息并选择 * 是，还原 * 进行确认。</block>
+  <block id="1ad18e39be8da049d574e51c3c28ee58" category="admonition">还原数据库后，如果您使用 HANA Studio 对 SAP HANA 系统执行时间点恢复，则可能会还原 SnapCenter 服务根据保留设置删除的数据备份目录条目。如果由于恢复操作而还原了已删除的数据备份目录条目，则 SnapCenter 服务将无法检测和删除这些条目。这可能会导致 SnapCenter 服务无法正确清理日志目录。您可以验证 SnapCenter 服务中的备份条目，以确定哪些所有数据备份目录条目是新还原的，并手动删除这些条目。</block>
+  <block id="6abf73ac39531a37ff136074cc08335d" category="inline-link">使用 SnapCenter 服务在 Azure NetApp Files 上执行 SAP HANA 备份和恢复</block>
+  <block id="9b44a2676a95ba774deb4462cadadcea" category="paragraph">* 查找更多信息 *<block ref="204f2023016db26726bcdc655d834854" category="inline-link-rx"></block></block>
+  <block id="2bb2f60cb418e92215192866e9fedcff" category="summary">添加 SAP HANA 系统，然后添加非数据卷。</block>
+  <block id="a26976a86fc4f35537d8f64e1ac8a5b6" category="doc">添加 SAP HANA 系统</block>
+  <block id="7c22501b82dfeecd40dc0b62dfa0aef9" category="paragraph">手动添加 SAP HANA 系统。不支持自动发现 SAP HANA 系统。</block>
+  <block id="be900e29b5381e7afc1dc74e63115cd1" category="paragraph">添加 SAP HANA 系统时，您应添加 HDB 用户存储密钥。HDB 安全用户存储密钥用于将 SAP HANA 系统的连接信息安全地存储在客户端上，而 HDBSQL 客户端使用安全用户存储密钥连接到 SAP HANA 系统。</block>
+  <block id="7a8cd5931d731495a46bf35a669a721e" category="admonition">如果 AKS 集群中的某个节点已关闭，则无法添加或修改 SAP HANA 系统。</block>
+  <block id="30b230132fd8b59f0b0d539db2200fe1" category="list-text">在 SnapCenter 服务页面上，单击 * SAP HANA 系统 * &gt; * 添加 * 。</block>
+  <block id="0c1a5b67011e14bb43bb9feaf10893f7" category="list-text">在 System Details 页面上，执行以下操作：</block>
+  <block id="0bb9528c6280f9acf1fac9a5b6232c63" category="list-text">选择系统类型：</block>
+  <block id="a3df030ad26d42c5af0fcbd0e6f513d7" category="list-text">指定 SAP HANA 系统的 SID 。</block>
+  <block id="e5eb632216332c0ee2d0860b38c00bfc" category="list-text">指定 SAP HANA 系统名称。</block>
+  <block id="01496b35ac5dfc42639b14392d213cef" category="list-text">单击 HDB 安全用户存储密钥文本框以添加用户存储密钥详细信息。</block>
+  <block id="5a64b90f778830156d86bb5352fc9022" category="paragraph">指定密钥名称，系统详细信息，用户名和密码。</block>
+  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">单击 * 添加 * 。</block>
+  <block id="f17079b947620ba46dc3350f27443987" category="admonition">如果要添加多主机 SAP HANA 系统，则应为每个主机添加用户存储密钥。</block>
+  <block id="26983a904e0717c520032a2178795368" category="list-text">单击 * 继续 * 。</block>
+  <block id="0a0f2401d7cfb7ad9085a1992acc4745" category="list-text">在存储占用空间页面上，执行以下操作：</block>
+  <block id="0b4d4df45dec0f187977abf3a0e77fca" category="list-text">选择工作环境并指定 NetApp 帐户。</block>
+  <block id="d253da62a1a7bf3e4d5c1adf904b607a" category="list-text">选择所需的卷。</block>
+  <block id="160c15dad3c86fc7f11c9d0f725a510f" category="list-text">单击 * 添加存储 * 。</block>
+  <block id="509926bc20361b8afcccdbb1d20c1d2f" category="list-text">查看所有详细信息，然后单击 * 添加 * 。</block>
+  <block id="d3bbdbc84ea2f8d0fbf35fec60ac4a8c" category="paragraph">您还可以编辑或删除已添加到 SnapCenter 服务的 SAP HANA 系统。删除 SAP HANA 系统后，所有关联的备份和目录条目都将被删除，并且不再受到保护。</block>
+  <block id="9ffc12f37359a324a9ddadcf88da6e4c" category="section-title">添加非数据卷</block>
+  <block id="327c3559bf13c35dec756b6a1d17e74c" category="paragraph">添加多租户数据库容器或单个容器类型 SAP HANA 系统后，您可以添加 HANA 系统的非数据卷。</block>
+  <block id="d11788d6414bbc5e3aa7623d3003a34b" category="list-text">在 SnapCenter 服务页面上，单击 SAP HANA 系统。</block>
+  <block id="8d6b0136f845c5e96113a3d6ca02e514" category="paragraph">此时将显示添加到 SnapCenter 服务的所有系统。</block>
+  <block id="fd1b0828ea2644dbfd963d23f92aabf2" category="list-text">单击 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 对应于要添加非数据卷的多租户数据库容器或单个容器类型系统。</block>
+  <block id="97d0711d27380b8c7e7ec4d7558bb2e2" category="list-text">单击 * 添加非数据卷 * 。</block>
+  <block id="7dec48d8e3922bc99874eb37414ce188" category="list-text">单击 * 添加新存储 * 。</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
+  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
+  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
+  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">有关 Cloud Manager 3.9 的注意事项</block>
+  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
+  <block id="1243d1128e634c4bb1a584f8521df2e5" category="summary">安装 HDBSQL 客户端以对 SAP HANA 数据库执行数据保护操作。</block>
+  <block id="3fd009a3fde81c4cf384e53c8112c76a" category="doc">安装 HDBSQL 客户端</block>
+  <block id="c912ea451a4f7fae49880a936d0e04a2" category="paragraph">启用 SnapCenter 服务后，安装 HDBSQL 客户端以对 SAP HANA 数据库执行数据保护操作。HDBSQL 客户端用于与 SAP HANA 系统进行通信。</block>
+  <block id="8b39314c97d2f82f1d8eb38fe721b81a" category="list-text">从 SAP 帐户下载 HDB 客户端软件。</block>
+  <block id="81394bfe9c46f32774e28ff127891d18" category="paragraph">它是扩展名为（ .sar ）的归档文件。示例： IMDb_CLIENT20_008_20-80002082.sar</block>
+  <block id="93ab1484a59bf23c163c8dddd970ba6e" category="admonition">HDB 客户端软件版本应为 2.4.202.1590784230 或更高版本。</block>
+  <block id="e6683e04e5e2aad2e90c7bc53272f49f" category="list-text">从 SAP 帐户下载最新的 SAPCAR 实用程序。示例： _SAPCAR_1010-70006178.EXC_</block>
+  <block id="8df2d34372b9a1c556ba71348174747e" category="list-text">在 Cloud Manager 用户界面上，单击 * 连接器 * 以获取连接器名称。</block>
+  <block id="db0b228d043019f838d3a4da414ce028" category="list-text">单击 * 虚拟机 * 。</block>
+  <block id="9266f2039cab63a3e9e09dc197f4b563" category="list-text">搜索 Cloud Manager 连接器并复制分配给该连接器的公有 IP 地址。</block>
+  <block id="02a2c63e3fc5b79c3e6634b5b7b7e269" category="paragraph">如果此连接器未启用公有 IP ，则应使用跳转主机。</block>
+  <block id="eafc1ddb7c110bad3e4f3362564aa25d" category="list-text">将 SAPCAR 实用程序和 HDB 客户端归档（ .sar ）文件复制到 Connector 计算机。</block>
+  <block id="2235c621ae42fb07166e8fc3847cc4e5" category="paragraph">要将文件复制到连接器路径，您需要凭据或在创建连接器时提供的密钥。</block>
+  <block id="d996ec26363b1c8529f317272111a169" category="list-text">`sCP &lt;SAPCAR_utility&gt; &lt;usersername&gt;@ &lt;IP_address&gt; ： /home/&lt;username&gt;`</block>
+  <block id="beca022a26d66582997fb108a701e646" category="list-text">`sCP &lt;HDB_Client_archive&gt; &lt; 用户名 &gt;@ &lt;IP_address&gt; ： /home/&lt; 用户名 &gt;`</block>
+  <block id="6db493c1456d5dacc2d5c05c2783e95a" category="paragraph">此文件将复制到 //home/&lt; 用户名 &gt;_ 。</block>
+  <block id="133589c5406596afe58275e8d3d4e67f" category="list-text">使用 ssh 凭据或密钥登录到 Connector VM 。</block>
+  <block id="d56b90046c96d04e73e85480c2bdab13" category="list-text">在 Connector VM 中运行以下命令，以便在 AKS 中安装 HDBSQL 客户端。</block>
+  <block id="d913a0a7b3e1fc0c765f177302ef5a07" category="list-text">`sUdo cp /home/&lt;username&gt;/&lt;sacpar_utility&gt; /var/lib/docker/volumes/cloudmanager_snapcenter_volume/_data/`</block>
+  <block id="0d30c65867919132ae67822e84714c5f" category="list-text">`sUdo cp /home/&lt; 用户名 &gt;/&lt; HDB_Client_archive&gt; /var/lib/docker/volumes/cloudmanager_snapcenter_volume/_data/`</block>
+  <block id="04e086354d30916cb5a4b4f83508bee3" category="list-text">`sUdo Docker exec -it cloudmanager_snapcenter /bin/bash /opt/netapp/hdbclient/hdbclient.sh -archivefile &lt;HDB_Client_archive&gt; -archiveutil &lt;SAPCAR_utility&gt;`</block>
+  <block id="fad3dbbe9841f42de249b688f1d47a80" category="paragraph">* 查找更多信息 *</block>
+  <block id="876fbabe47f1976d5bf65b83530a5cfd" category="inline-link">如何使用 SCP 移动文件</block>
+  <block id="f0cdebd98ab24ec2a0c9fa5f621da1c7" category="paragraph"><block ref="f0cdebd98ab24ec2a0c9fa5f621da1c7" category="inline-link-rx"></block></block>
+  <block id="9192a9f7a760ae1ad87bc3d0801be2ad" category="summary">使用系统定义或自定义策略为 SAP HANA 系统创建按需备份或计划备份。</block>
+  <block id="00c3a521f200f15289d4d2520914f61d" category="doc">备份 SAP HANA 系统</block>
+  <block id="35bd15d82db654f30aca713785904042" category="paragraph">您可以使用系统定义或自定义策略对 SAP HANA 系统执行按需备份或计划备份。SnapCenter 服务既支持基于快照的备份，也支持基于文件的备份。</block>
+  <block id="0a4a3719bc7519d1162060e0f0e08f8a" category="section-title">创建备份策略</block>
+  <block id="a251d47b9cd9ab372db3e3ed425d337e" category="paragraph">策略用于指定备份类型，备份频率，计划，保留类型，保留数量， 以及数据保护操作的其他特征。您可以使用 Cloud Manager UI 创建策略。</block>
+  <block id="411ff40e8864e71d617fc988b4f37448" category="paragraph">默认情况下，可以使用两个系统定义的策略，分别用于基于快照的备份操作和基于文件的备份操作。</block>
+  <block id="497cdcc4d96044dee873a809034126b5" category="list-text">在 SnapCenter 服务页面上，单击 * 策略 * &gt; * 添加 * 。</block>
+  <block id="9b53d8722376d76d95e16c11121c7aff" category="list-text">在创建备份策略页面上，执行以下操作：</block>
+  <block id="d14a88e73f059d5716e327a50ec863a3" category="list-text">指定策略名称。</block>
+  <block id="086639263c82bd871885aeb5fa33fee8" category="list-text">选择要使用此策略创建的备份类型。</block>
+  <block id="ba0006fc6cf3c24524212d8a22e96bee" category="list-text">指定备份名称。</block>
+  <block id="8e11894e22f83c26c34d6e7a59f562fa" category="paragraph">默认情况下会添加后缀时间戳。您可以选择备份名称中应包含的其他后缀，并定义后缀的显示顺序。</block>
+  <block id="0fbdb70e1ea8c88151e4fb2c7b226348" category="list-text">指定计划备份的计划频率以及开始和结束时间。</block>
+  <block id="dbf5a2ea304133a2405e80bab3a107cd" category="list-text">指定要保留的快照副本数或指定应保留快照副本的天数。</block>
+  <block id="ce4aed91ed2a3f8e3ed8369bb76e9402" category="paragraph">您可以通过单击来查看，编辑或删除策略 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 与策略对应。</block>
+  <block id="c91ff5b89781f9b20673d63d2fbc4481" category="section-title">创建按需备份</block>
+  <block id="07ef1c94a48a13e2c73cf7bac8561700" category="paragraph">通过关联策略或不关联任何策略来创建 SAP HANA 系统的按需备份。</block>
+  <block id="705a9b11652f383ee34aefa3d0e2c869" category="list-text">单击 <block ref="7c7910c2beb8437dc7aa4b8b65a637e8" category="inline-image-macro-rx" type="image"></block> 对应于要保护的系统。</block>
+  <block id="8e546c540a2eb559f025d823f0985817" category="list-text">单击 * 按需备份 * 。</block>
+  <block id="a69d48245ab1162d9f0f89d1d951689a" category="list-text">在按需备份页面上，执行以下操作之一：</block>
+  <block id="d35259313a54c1b94e605937a2cdf44e" category="list-text">如果要将备份与策略关联，请选择该策略并单击 * 创建备份 * 。</block>
+  <block id="91f2a03316205139c26fce3578713c69" category="list-text">如果不希望将备份与策略关联，请执行以下操作：</block>
+  <block id="39474ced92a30e1703441d25894a3685" category="list-text">在策略字段中，选择 * 无 * 。</block>
+  <block id="d9c103e9b28e2bebca1491609f830d9e" category="list-text">选择备份类型。</block>
+  <block id="9c390b5a1fe85e859a200219d560a583" category="paragraph">如果要备份非数据卷，则只能选择 * 基于 Snapshot * 作为备份类型。</block>
+  <block id="32342343e5df757f90e1e11a59ac04e9" category="list-text">指定保留期限。</block>
+  <block id="3c384d2eeea22869be9b66e36dec9d6e" category="list-text">单击 * 创建备份 * 。</block>
+  <block id="73626abd0ef8681eaa400cbeb51eeb4e" category="section-title">创建计划备份</block>
+  <block id="1c4e52af72de4105d44b1b12fdccbf73" category="paragraph">通过将策略与 SAP HANA 系统关联来创建计划备份。</block>
+  <block id="fcb5607e0e0f82fe2ae26e3330c77dd0" category="list-text">单击 * 保护 * 。</block>
+  <block id="d6381ef9d201b881b6c16b897755b3b0" category="list-text">选择要用于保护 SAP HANA 系统的策略。</block>
+  <block id="1bc534d3a549cf9d28257f63406e41b1" category="summary">部署 SnapCenter 服务和保护数据的任务。</block>
+  <block id="e65fd4b36cb902004ec1a11e44a4c354" category="paragraph">开始使用 SnapCenter 服务，只需几个步骤即可保护您的数据。</block>
+  <block id="63785c950a9f3cb1e82193ec1f7e49ee" category="inline-link">注册到 NetApp Cloud Central</block>
+  <block id="5970bd5da21d70901770347c11bbaaaf" category="inline-link">登录到 Cloud Manager</block>
+  <block id="ac252743de820aac9183d9f76d4bed67" category="inline-link">NetApp 帐户</block>
+  <block id="448b4179e9081f9b09ecb407bfc3d375" category="paragraph">您应该<block ref="1f33e40b7cbc500b81a81880d0472d5d" category="inline-link-rx"></block>，<block ref="85362a42d667fef5ad89f333e6ef6863" category="inline-link-rx"></block>，然后设置<block ref="e21a9fac1d28e9fb068a4b77b13a00a9" category="inline-link-rx"></block>。</block>
+  <block id="d59048f21fd887ad520398ce677be586" category="inline-link">了解更多信息。</block>
+  <block id="1a1fb24e7da5a3ddceed77de5f61f530" category="paragraph">只有帐户管理员才能部署 SnapCenter 服务。但是，帐户管理员和 SnapCenter 管理员可以执行不同的操作。<block ref="f16792f5e43bceae84f18b6113aacc62" category="inline-link-rx"></block></block>
+  <block id="f908c36705844b4672f06b0e10ee4838" category="paragraph">您应确保所有 <block ref="fa07f7c80e3b9954be9b34a08d085342" category="inline-link-macro-rx"></block> 要创建连接器并启用 SnapCenter 服务，需要满足此要求。</block>
+  <block id="9ee90c6524cb5493257b2167abc94c5c" category="inline-link-macro">在 Azure 中为 SnapCenter 服务创建连接器</block>
+  <block id="ef2af854781ce71784c836ac55ee5298" category="paragraph">您应该 <block ref="4d9e1737fd40621293357dd1e83461e4" category="inline-link-macro-rx"></block>。</block>
+  <block id="9d5934b77e867f1b75d620dd08a6e0f0" category="paragraph">如果您的连接器满足所有前提条件，则可以使用该连接器。</block>
+  <block id="3b9bc62f2f1105367e685e9c3c5d5ddb" category="paragraph">在 Cloud Manager 中创建 Azure NetApp Files 工作环境，以创建和管理 NetApp 帐户，容量池，卷和快照。<block ref="fc5c037f35305c25af291ecdcda29c52" category="inline-link-rx"></block></block>
+  <block id="11f76b038128e01dcdb73916098c6f21" category="inline-link-macro">启用 SnapCenter 服务</block>
+  <block id="9005e3b9eb71b10846c44229333b8e10" category="paragraph">您应该 <block ref="ce5c2405f61c2e9df01facab7b397870" category="inline-link-macro-rx"></block> 使用 Cloud Manager UI 。启用 SnapCenter 服务后，将创建托管 SnapCenter 服务的 Azure Kubernetes Service （ AKS ）集群。</block>
+  <block id="ffb862d6ed4e03ace7edee600ef7f672" category="inline-link-macro">安装 HDBSQL 客户端</block>
+  <block id="b51ad42c1cb6ae5c146781dfc7106f8c" category="paragraph">您应该 <block ref="dfe2de5d9a6585cf74b8bd4b155b7cc7" category="inline-link-macro-rx"></block> 对 SAP HANA 数据库执行数据保护操作。HDBSQL 客户端用于与 SAP HANA 系统进行通信。</block>
+  <block id="3eff3160e226ee94088d7a82b1742b31" category="inline-link-macro">添加 SAP HANA 系统</block>
+  <block id="1a9eae721c5d6595d97e5dcf7a954512" category="paragraph">您应手动执行此操作 <block ref="2adc40e022beadeb98f925dbb1ddc5c7" category="inline-link-macro-rx"></block>。</block>
+  <block id="07782826fd770f3a08620e4eab9fd47f" category="inline-link-macro">备份 SAP HANA 系统</block>
+  <block id="7ac15f47230ee764753f9724930e69bc" category="inline-link-macro">还原 SAP HANA 系统</block>
+  <block id="61e8837b00fd47dc7a5a21fa5a795866" category="paragraph">然后，您可以 <block ref="4e30a3e5a68d487f5006c23de2f184dc" category="inline-link-macro-rx"></block> 使用系统定义的策略或自定义策略。如果发生数据丢失，您可以 <block ref="95aa2756e80acc49f6bc0248eab64b5a" category="inline-link-macro-rx"></block> 使用该系统的备份。</block>
+  <block id="1b592902fdb11c82611378e3ec52d0e5" category="summary">对 SnapCenter 服务问题进行故障排除。</block>
+  <block id="7a4e5e5bc542eae2d10e3506f839f2ae" category="doc">对问题进行故障排除</block>
+  <block id="f2988107909ad16194c70b71386ca695" category="section-title">问题描述： Redis Pod 卡在 CrashLoopBackOff 状态</block>
+  <block id="ee9fbf27d140ce1532e0146065dcd21f" category="paragraph">在高可用性配置中，如果问题描述集群的所有节点均已关闭，则 集群不会恢复工作状态。重新启动所有节点时，您可能会发现所有 Redis Pod 均处于 CrashLoopBackOff 状态。</block>
+  <block id="2303ba437b09df11bb2d2530aab9a14e" category="paragraph">* 解决方案 * 您应运行以下命令来还原系统。</block>
+  <block id="6a0c197ad53eaaf3842eef70258f4f4a" category="list-text">登录到 Connector 。</block>
+  <block id="8ad9550e2dc33934b88363a91feab2db" category="list-text">删除所有 Redis Pod 。</block>
+  <block id="9b1e1181fa77af9c55443c40c2859c10" category="list-text">`docker exec -it cloudmanager_snapcenter - sh`</block>
+  <block id="fb720cb6e88402dcec030a303a678403" category="list-text">`kubectl scale -replices=0 STS sc-V 依赖关系 -Redis-node -n SnapCenter`</block>
+  <block id="4519eb841982c3b3c417960eea91e49d" category="list-text">验证是否已删除所有 Redis Pod 。`kubectl get Pod -n SnapCenter`</block>
+  <block id="ee9ee650321b44ac20b03a9890997106" category="list-text">如果未删除 Redis Pod ，请运行以下命令：</block>
+  <block id="26252079e3bdda987e334cfd1aa1c565" category="list-text">`kubectl delete pod sc-V 依赖关系 -Redis-node-0 -n SnapCenter`</block>
+  <block id="35fe5b07eaee36afcfc179c2159c525a" category="list-text">`kubectl delete pod sc-V 依赖关系 -Redis-node-1 -n SnapCenter`</block>
+  <block id="5d130dac3d502f4a74a70f9daf7fe0aa" category="list-text">`kubectl delete pod sc-V 依赖关系 -Redis-node-2 -n SnapCenter`</block>
+  <block id="ddd9c32f0cc1260071888b3e7b8fcd7c" category="list-text">删除所有 Redis Pod 后，运行： `kubectl scale -replices=3 STS SC-B依赖 关系 -Redis-node -n SnapCenter`</block>
+  <block id="a144b2704d2f5c0b193bb0de485d2363" category="list-text">验证所有已删除的 Pod 是否均已启动且正在运行。`Kubectl get Pod -n SnapCenter`</block>
+  <block id="41fc35af1363342b9cf9ddc8e9a13ad9" category="section-title">问题描述：重新启动集群节点后，作业失败</block>
+  <block id="621e2561c049659415009afc8c0e2b5a" category="paragraph">在高可用性配置中，如果问题描述集群的所有节点均已关闭，则 集群不会恢复工作状态。重新启动所有节点时，您可能会看到作业失败，粒度任务变为灰色或超时。</block>
+  <block id="4a47842ec9ee4b794f06db8307d4776a" category="paragraph">* 解决方案 * 您应运行以下命令：</block>
+  <block id="999b922f1ecfac1a619dac3af5c0dce6" category="list-text">保存 RabbitMQ 状态集（ STS ）部署。</block>
+  <block id="563567628edf5ecb1b41f680b1b47a86" category="list-text">`kubectl get STS rabbitmq -o YAML -n SnapCenter &gt; rabbitmq_STS.YAML`</block>
+  <block id="238949b8b326f4d2c5fae1de7ef0cfb4" category="list-text">确定连接到 RabbitMQ Pod 的永久性卷（ PV ）。`kubectl get PV` grep rabbitmq</block>
+  <block id="3764f4d281ff7fe37d0970776a27f7dd" category="list-text">删除附加到 RabbitMQ Pod 的永久性卷声明（ Persistent Volume Claim ， PVC ）。`kubectl get pvc -n SnapCenter pvc` grep rabbitmq hk ｛ 'print $1' ｝ | xargs kubectl delete pc -n SnapCenter</block>
+  <block id="c592bd1c6b7ed1b630e7563e447d3950" category="list-text">删除先前在步骤 3 中确定的每个 PV 。`kubectl delete pv "PVname"`</block>
+  <block id="db44e2317048d63dd5bd906742b9fa70" category="list-text">创建 RabbitMQ STS 。`kubectl create -f rabbitmq_STS.YAML -n SnapCenter`</block>
+  <block id="3db98fc7ac0a63ba0bb727b9ca5eb864" category="section-title">问题描述：创建租户数据库期间，备份操作失败</block>
+  <block id="ad6ab9308a0a7ca31d68fe9cdd997f9a" category="paragraph">* 问题描述创建租户数据库时，如果启动按需备份或计划备份，备份操作将失败。</block>
+  <block id="b4a0a531c0c52c12ad810b7c517a16e1" category="paragraph">创建租户数据库是对解决方案 HANA 系统执行的维护操作。</block>
+  <block id="6e301028bad33b0dd3983c7e30f9a614" category="paragraph">在创建租户数据库之前，应使用 SnapCenter 服务将 SAP HANA 系统置于维护模式。将 SAP HANA 系统置于维护模式后，无法启动任何操作。</block>
+  <block id="5e65789650270172a268777aa7778e17" category="paragraph">创建租户数据库后，您应将 SAP HANA 系统恢复为生产模式。</block>
+  <block id="c4d2b59fc4d61d92b985424cf44a39cb" category="summary">在 Azure 中为 SnapCenter 服务创建连接器。</block>
+  <block id="a266f6237722f9b5a4130ef692c55210" category="doc">在 Azure 中为 SnapCenter 服务创建连接器</block>
+  <block id="fc41b305b8f564b87007b7d9f6ccc823" category="paragraph">客户管理员应先部署 Connector ，然后才能使用 Cloud Manager 功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。</block>
+  <block id="65803824e330be5dda78189602241b9d" category="inline-link">从 Azure Marketplace 创建连接器</block>
+  <block id="34f79c41d25181a7b13c9385fbd7ea59" category="paragraph">默认情况下，您可以从 Azure Marketplace 在 Azure 中创建 Connector 。执行步骤至时<block ref="02cd17b9f9a29ca67113e5669fd9247e" category="inline-link-rx"></block>，您应记住以下几点：</block>
+  <block id="e77ff8b764d001fc5632f5914fa1efbb" category="list-text">无论在何处指定适用于 Cloud Volumes ONTAP 的 Cloud Manager ， SnapCenter 服务都可以使用这种方式。</block>
+  <block id="3407e20e2dda7ef741cae11aedbebc06" category="list-text">对于 Cloud Manager Name ，请指定您的 Connector VM 名称以更好地进行标识。此名称将在 Cloud Manager UI 中显示为连接器名称。</block>
+  <block id="4a89c5f604f86d04b1924294cbcb21d4" category="list-text">如果您在未配置公有 IP 的情况下配置了连接器或配置了防火墙，则应使用跳转主机连接到连接器计算机。</block>
+  <block id="9fc74892eea31c0ba8eb5335df0eccec" category="inline-link">用户同意</block>
+  <block id="42b868e2104121f766618462fe94607c" category="paragraph">如果您有<block ref="76b48a38c537fcda47ae8e3a8eb5b6b6" category="inline-link-rx"></block> 在 Azure Active Directory 中启用，或者如果租户管理员可以提供同意，您可以从 Cloud Manager UI 创建 Connector 。</block>
+  <block id="4784e3f9b0f7b16fd2b7e96dba490438" category="section-title">已启用用户同意</block>
+  <block id="036a55993c4eaf06878d19dff8ddb328" category="inline-link">从 Cloud Manager 创建 Connector</block>
+  <block id="11cf5fe8d9e595e932847c44809b0452" category="paragraph">如果在 Azure Active Directory 中启用了用户同意，<block ref="9aadc2506edf0d025dd3c0665f0cff70" category="inline-link-rx"></block>。</block>
+  <block id="6ef901b02394aca9745109e7a2528dd0" category="section-title">已禁用用户同意</block>
+  <block id="0da4a1a8618ceded22f25810a530ebc1" category="inline-link">请求管理员同意</block>
+  <block id="e4ee08261df520a9645e6a5a23eaf1a8" category="list-text">如果在 Active Directory 中配置了管理员同意工作流，则应执行此操作<block ref="6d8cf01151ef5a360f3c449b4a270ed1" category="inline-link-rx"></block>。</block>
+  <block id="04910f034d753a027f328a34866898e3" category="list-text">如果未配置管理员同意工作流，您应：</block>
+  <block id="00711dadf5df9c8a678ecdbebd530ddd" category="inline-link">构建用于授予租户范围管理员同意的 URL</block>
+  <block id="ba7c359b6d2c7bae9eb803cbb076d88d" category="list-text"><block ref="d6f17a03bce9849191c532c791897328" category="inline-link-rx"></block>。</block>
+  <block id="ef2fd685db59f852e94812ddf44402c6" category="admonition">将客户端 ID 指定为 _989efff4-9a9e-46fa-9f17-de39e15714f9_ 。这是在 Cloud Manager 向导中命名的 Cloud Manager Azure 应用程序 ID 。</block>
+  <block id="598f1da796ed62d80dddd63cb8775774" category="list-text">请租户管理员在浏览器中运行此 URL ，并征得其同意。</block>
+  <block id="3cc2e72844bf5927e62f9110eb43bd87" category="paragraph">管理员可以忽略显示的错误</block>
+  <block id="e7cf5a691d8b98575b52980ab32d1529" category="inline-link">从 Cloud Manager 创建 Connector</block>
+  <block id="8ae39ac91e2944d49fd9febe7f84103c" category="list-text"><block ref="77b641a6e84a3fa8d2e9c3859683b592" category="inline-link-rx"></block>。</block>
+  <block id="1f1b6b890eecc430a090f1c146a38865" category="admonition">要连接到计算机，需要用户名和密码或在创建 Connector 时提供的密钥</block>
+  <block id="9998e542affb998a1071422d2fa357a2" category="summary">Cloud Manager 中启用的 SnapCenter 服务可为 Azure NetApp Files 上的 SAP HANA 系统提供高效，应用程序一致且基于策略的备份和还原。</block>
+  <block id="62b15c6416b971695b696987cd557ace" category="doc">SnapCenter 服务文档</block>
+  <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">在向 NetApp 技术支持创建支持案例之前，您需要先将 NetApp 支持站点帐户添加到 Cloud Manager 中，然后注册获取支持。</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
+  <block id="d53e2559d6ace0e907fc57192bf286b6" category="paragraph"><block ref="d53e2559d6ace0e907fc57192bf286b6" category="inline-link-macro-rx"></block></block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
+  <block id="a7aed6b9de0d7fa9719e4d634c1d806f" category="sidebar">SnapCenter 服务文档</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
+  <block id="411eaaaa405899304e54dce3363a2baf" category="sidebar">快速入门</block>
+  <block id="fc6193376b55c5eef2823c76b83a1607" category="sidebar">使用 SnapCenter 服务保护 SAP HANA 系统</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
+  <block id="e096a5e1d4ec29b8011f6c6d15b90ee2" category="sidebar">新增功能</block>
+  <block id="2ea7b0fee984c9c7fcabd32058eb86ac" category="sidebar">启用 SnapCenter 服务</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="sidebar">前提条件</block>
+  <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">创建连接器</block>
+  <block id="676f733b0741167535adf605d514137c" category="sidebar">保护 SAP HANA 系统</block>
+  <block id="e0e7dee929fec9739011d2377147cb1b" category="sidebar">知识支持</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客社区</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
+  <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
+</blocks>

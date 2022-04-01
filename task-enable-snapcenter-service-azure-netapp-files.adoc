@@ -1,0 +1,182 @@
+---
+sidebar: sidebar 
+permalink: task-enable-snapcenter-service-azure-netapp-files.html 
+keywords: enable snapcenter service, SAP HANA, azure netapp files, azure kubernetes service, AKS, connector, user assigned managed identity, permission, non-high availability, AKS cluster 
+summary: 使用 SnapCenter 管理器 UI 启用 Cloud 服务。 
+---
+= 为 Azure NetApp Files 启用 SnapCenter 服务
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用 SnapCenter 管理器 UI 启用 Cloud 服务。启用 SnapCenter 服务后，将创建托管 SnapCenter 服务的 Azure Kubernetes Service （ AKS ）集群。
+
+* 您需要的内容 *
+
+* 您应在 Azure 订阅中注册 "microsoft.ContainerService" 资源提供程序。有关信息，请参见 https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider["如何注册资源提供程序"^]。
+* 您应确保所有 link:prerequisites-azure-connector-snapcenter-service.html["前提条件"] 已满足。
+
+
+* 关于此任务 *
+
+AKS 集群将在创建 Connector 时选择的同一资源组和子网中创建。如果在创建连接器时未使用公有 IP 地址，则会在专用模式下创建 AKS 集群。
+
+要创建和管理 AKS 集群，需要为用户分配具有必要权限的托管身份。此时将创建分配给用户的托管身份，并应将其分配给 Connector VM 。
+
+* 步骤 *
+
+. Log in to Cloud Manager.
+. 选择在 Cloud Manager 中创建的 Connector 。
++
+确保 Connector 与要保护的 SAP HANA 系统建立了网络连接。
+
+. 单击 * 所有服务 * > * SnapCenter * > * 启用 * 。
+. 执行以下操作之一：
++
+** 如果您已从 Cloud Manager UI 创建连接器，并且您有权创建和分配角色，则 SnapCenter 服务安装会自动创建分配给用户的托管身份。
++
+... 选择 * 使用 Azure 登录 * 。
+... 在 Get Ready 页面上，单击 * 继续 * 。
+... 指定 Azure 凭据。
++
+
+TIP: 您应确保 Azure 登录帐户具有足够的权限。有关权限以及如何分配权限的信息，请参见 <<Permissions required for Azure login account>>。
+
+
+
+** 如果您已从 Azure Marketplace 创建 Connector ，或者您无权创建和分配角色，请按照以下步骤创建用户分配的托管身份。
++
+... 选择 * 使用 Azure 命令行界面脚本 * 。
+... 如果您对 Azure 帐户没有足够的权限，请联系您的管理员。
++
+有关权限以及如何分配权限的信息，请参见 <<Permissions required for Azure login account>>。
+
+... 下载 link:media/prerequisite_azure.sh["prerequisite_azure.sh"] 脚本到本地系统。
+... 登录到 https://azure.microsoft.com/en-in/features/azure-portal/["Microsoft Azure 门户"^]。
+... 单击 image:screenshot-azure-cloud-shell.png["Azure Cloud Shell 的屏幕截图"] 打开云 Shell 并选择 Bash 控制台。
+... 将脚本上传到 Azure Cloud Shell 。
+... 分配运行脚本的权限。
++
+`chmod +x ./prerequise_azure.sh`
+
+... 运行脚本。
++
+` 。 /prerequisite_azure.sh -s <subscription_ID> -g <connector_resourcegroup_name> -c <connector_vm_name>`
+
+
+
+
+
+. 在集群配置页面上，执行以下操作：
++
+.. 选择集群配置。
++
+*** 如果选择 * 高可用性 * ，则会在可用区域中创建一个包含 3 个工作节点的 Azure Kubernetes Service （ AKS ）集群。
+*** 如果选择 * 单节点 * ，则会创建一个具有单节点的 AKS 集群。
+
+
+.. 指定 Kubernetes Pod 地址范围。
++
+确保 Kubernetes Pod 地址范围不会与所连接的虚拟网络，对等虚拟网络和内部网络的 IP 范围重叠。此外，此范围不应与服务地址范围和 Docker 网桥地址重叠。
+
+.. 指定 Kubernetes Service 地址。
++
+确保 Kubernetes 服务地址范围不会与所连接的虚拟网络，对等虚拟网络和内部网络的 IP 范围重叠。此外，此范围不应与 Pod 地址范围和 Docker 网桥地址重叠。
+
+.. 指定 Docker 网桥网络。
++
+确保 Docker 网桥地址不会与所连接的虚拟网络，对等虚拟网络和内部网络的 IP 范围重叠。此外，此范围不应与 Pod 地址范围和服务地址范围重叠。
+
+.. 如果在创建连接器时不使用公有 IP ，并且您正在 vNet 上使用自定义 DNS 服务器，请选择 * 支持自定义 DNS 服务器 * 。
++
+
+IMPORTANT: 您应在专用 DNS 区域中为托管自定义 DNS 服务器的 VN 创建虚拟网络链接。专用 DNS 区域名称和资源组名称将显示在用户界面上。
+
+
+
+. 在 Review 页面上，查看详细信息并单击 * 启用 * 。
+. 成功启用 SnapCenter 服务后，单击 * 完成 * 。
+
+
+* 结果 *
+
+* 成功启用 SnapCenter 服务后，将创建 AKS 集群。您可以单击来查看 AKS 集群详细信息 image:screenshot-cluster-details.png["图标的屏幕截图，用于查看集群详细信息"]。
++
+
+NOTE: 如果无法启用 SnapCenter 服务，则可以修复此问题描述并单击 * 重试 * 。
+
+* 创建分配给用户的托管身份后，该身份将分配给自定义角色。
++
+** 分配给用户的托管身份将分配给在 Connector 资源组范围内具有以下权限的自定义角色：
++
+[source, json]
+----
+"Microsoft.Resources/subscriptions/resourceGroups/read",
+"Microsoft.ContainerService/managedClusters/read",
+"Microsoft.ContainerService/managedClusters/write",
+"Microsoft.ContainerService/managedClusters/delete",
+"Microsoft.ContainerService/managedClusters/listClusterUserCredential/action",
+"Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+"Microsoft.ManagedIdentity/userAssignedIdentities/read",
+"Microsoft.Compute/virtualMachines/read",
+"Microsoft.Network/networkInterfaces/read"
+----
+** 分配给用户的托管身份将分配给在 Connector 的 vNet 范围内具有以下权限的自定义角色：
++
+[source, json]
+----
+"Microsoft.Authorization/roleAssignments/read",
+"Microsoft.Network/virtualNetworks/subnets/join/action",
+"Microsoft.Network/virtualNetworks/subnets/read",
+"Microsoft.Network/virtualNetworks/read",
+"Microsoft.Network/virtualNetworks/join/action"
+----
+** 如果在子网上配置路由表以路由到防火墙，则分配给用户的托管身份将分配给路由表范围内具有以下权限的自定义角色。
++
+[source, json]
+----
+"Microsoft.Network/routeTables/*",
+"Microsoft.Network/networkInterfaces/effectiveRouteTable/action",
+"Microsoft.Network/networkWatchers/nextHop/action"
+----
+** 如果安装的 Connector 不使用公有 IP ，则分配给用户的托管身份将分配给专用 DNS 区域范围内具有以下权限的自定义角色。
++
+[source, json]
+----
+"Microsoft.Network/privateDnsZones/*"
+----
+
+
+
+
+
+
+== Azure 登录帐户所需的权限
+
+Azure 登录帐户用于创建分配给用户的托管身份，所需角色以及将此身份分配给 Connector VM 。
+
+
+IMPORTANT: 登录帐户的凭据不会存储在 SnapCenter 服务的任何位置，也不会用于调用 API 。这些凭据仅在 UI 中使用。
+
+* 步骤 *
+
+. 使用创建自定义角色 link:media/SnapCenter_Deployment_Role1.json["SnapCenter_Deployment_Role1.json"] 文件
++
+您应将 SnapCenter_Deployment_Role1.json 文件中的 <subscription_ID> 替换为 Azure 订阅 ID 。
+
+. 将角色分配给 Connector 资源组范围内的登录帐户。
+. 使用创建自定义角色 link:media/SnapCenter_Deployment_Role2.json["SnapCenter_Deployment_Rol2.json"] 文件
++
+您应将 SnapCenter_Deployment_Rol2.json 文件中的 <subscription_ID> 替换为 Azure 订阅 ID 。
+
+. 在 Connector 的 vNet 或更高版本范围内将角色分配给登录帐户。
+. 如果您有 link:prerequisites-azure-connector-snapcenter-service.html#firewall-configuration["已配置防火墙"]，使用创建自定义角色 link:media/SnapCenter-Deployment-Role3.json["SnapCenter-Deployment-Role3.json"] 文件
++
+您应将 SnapCenter_Deployment_Role3.json 文件中的 <subscription_ID> 替换为 Azure 订阅 ID 。
+
+. 在连接到 SnapCenter 子网的路由表范围内，将角色分配给登录帐户。
+

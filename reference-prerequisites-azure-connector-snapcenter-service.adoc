@@ -1,0 +1,206 @@
+---
+sidebar: sidebar 
+permalink: reference-prerequisites-azure-connector-snapcenter-service.html 
+keywords: connector, prerequisites, firewall, network requirements, subnet, VNet, network security group, connectivity 
+summary: 在创建连接器和启用 SnapCenter 服务之前，请确保满足前提条件。 
+---
+= 创建连接器和启用 SnapCenter 服务的前提条件
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 Azure 中创建连接器并启用 SnapCenter 服务之前，您应确保满足某些要求。
+
+* 确保为 Connector 选择的子网不应与为 Azure Kubernetes Service （ AKS ）预留的以下 IP 地址范围重叠： 169.254.0.0/16 ， 172.30.0.0/16 ， 172.31.0.0/16 和 192.0.2.0/24 。
+* 确保选定子网中未运行任何 AKS 。
+* 确保所选子网可以通过相应的端口访问 SAP HANA 系统。
+* 如果所选子网的 vNet 与 SAP HANA 系统的 vNet 不同，请确保 VNets 可以通过 VPN 网关，对等或其他方式彼此通信。
+* 如果要在防火墙后启用 SnapCenter 服务，应执行中所述的操作 <<Network requirements>>。
++
+您应事先确定是否要在防火墙后启用 SnapCenter 服务。启用 SnapCenter 服务后，您无法将其配置为在防火墙后运行。这是一个 AKS 限制。
+
+
+
+
+
+== 网络要求
+
+设置您的网络，以便 Connector 可以管理云环境中的资源和流程。
+
+
+
+=== 防火墙配置
+
+如果要在防火墙后启用 SnapCenter 服务，应执行以下操作。
+
+
+NOTE: 如果您使用的是 Azure 防火墙，则可以使用脚本执行这些步骤。有关信息，请参见 <<Azure Firewall configuration>>。
+
+* 步骤 *
+
+. 将以下网络规则添加到防火墙。
++
+[cols="4*"]
+|===
+| 目标端点 | 协议 | Port | 注释 
+
+
+| https://docs.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags["服务标签"^] — AzureCloud 。 < 地区 > ： 1194 | UDP | 1194. | 如果您计划使用专用连接器和专用 SnapCenter 服务集群，则不需要此功能。 
+
+
+| https://docs.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags["服务标签"^] — AzureCloud 。 < 地区 > ： 9000 | TCP | 9000 | 如果您计划使用专用连接器和专用 SnapCenter 服务集群，则不需要此功能。 
+
+
+| FQDN — ntp.ubuntu.com:123 | UDP | 123. | Azure 虚拟机中的时间同步需要此功能。 
+
+
+| https://docs.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags["服务标签"^] — AzureCloud 。 < 地区 > ： 443 | TCP | 443. | 如果您计划使用专用连接器和专用 SnapCenter 服务集群，则不需要此功能。 
+|===
+. 在防火墙中添加具有以下 FQDN 标记和端口详细信息的应用程序规则：
++
+** FQDN 标记— AzureKubernetes Service
+** HTTPS ： 443
+
+
+. 添加一个应用程序规则，将以下端点作为目标 FQDN ，并将协议和端口设置为 HTTPS ： 443 。
++
+[cols="43,57"]
+|===
+| 端点 | 目的 
+
+
+| https://management.azure.com https://login.microsoftonline.com | 支持 Cloud Manager 在大多数 Azure 区域部署和管理 Cloud Volumes ONTAP 。 
+
+
+| https://management.microsoftazure.de https://login.microsoftonline.de | 支持 Cloud Manager 在 Azure Germany 地区部署和管理 Cloud Volumes ONTAP 。 
+
+
+| https://management.usgovcloudapiNet https://login.microsoftonline.com | 支持 Cloud Manager 在 Azure US Gov 区域部署和管理 Cloud Volumes ONTAP 。 
+
+
+| https://api.services.cloud.netpp.com | 允许向 NetApp Cloud Central 发出 API 请求。 
+
+
+| https://cloud.support.netapp.com.s3.us-west-1.amazonaws.com | 提供对软件映像、清单和模板的访问。 
+
+
+| https://cognito-idp.us-east-1.amazonaws.com \https://cognito-identity.us-east-1.amazonaws.com \https://sts.amazonaws.com \https://cloud-support-netapp-com-accelerated.s3.amazonaws.com | 使 Connector 能够访问和下载清单，模板和 Cloud Volumes ONTAP 升级映像。 
+
+
+| https://cloudmanagerinfraprod.azurecr.io | 访问运行 Docker 的基础架构中容器组件的软件映像，并提供解决方案以实现与 Cloud Manager 的服务集成。 
+
+
+| https://kinesis.us-east-1.amazonaws.com | 使 NetApp 能够从审计记录流化数据。 
+
+
+| https://cloudmanager.cloud.netapp.com | 与 Cloud Manager 服务进行通信，其中包括 NetApp 帐户。 
+
+
+| https://netapp-cloud-account.auth0.com | 与 NetApp Cloud Central 进行通信以实现集中式用户身份验证。 
+
+
+| https://support.netapp.com | 与 NetApp AutoSupport 通信。 
+
+
+| https://cloud-support-netapp-com.s3.us-west-1.amazonaws.com | 与 NetApp 沟通以获得系统许可和支持注册。 
+
+
+| https://client.infra.support.netapp.com.s3.us-west-1.amazonaws.com \https://cloud-support-netapp-com-accelerated.s3.us-west-1.amazonaws.com | 使 NetApp 能够收集对支持问题进行故障排除所需的信息。 
+
+
+| * .blob.core.windows.net | 使用代理时， HA 对需要此参数。 
+
+
+| https://auth0.com | Auth0 身份验证必需。 
+
+
+| https://registry-1.docker.io \https://auth.docker.io \https://production.cloudflare.docker.com | 检索 SnapCenter 服务工作流引擎的依赖关系。 
+
+
+| https://exteranl-log.cloudmanager.netapp.com | 允许通信将日志传输到 Cloud Manager 日志存储库。 
+|===
+. 选择要安装 SnapCenter 服务的子网。
+. 使用路由创建路由表：
++
+** 将流量从子网转发到防火墙内部 IP 地址
+** 将流量从防火墙公有 IP 地址转发到 Internet 。
+
+
+. 将路由表附加到子网。
+
+
+有关 Cloud Manager Connector 的网络要求的信息，请参见 https://docs.netapp.com/us-en/cloud-manager-connector/reference-networking-cloud-manager.html["连接器的网络连接要求"^]。
+
+
+
+=== Azure 防火墙配置
+
+如果要在 Azure 防火墙后启用 SnapCenter 服务，应执行以下操作。
+
+* 您需要的内容 *
+
+* 您应已创建防火墙（经典模式）。
+* 您应已为 SnapCenter 服务创建 vNet 和子网。
+* 如果您的防火墙资源和 SnapCenter 服务的 vNet 位于不同的租户中，则应登录到 Azure Shell 中的两个租户。
+* 如果您的防火墙 vNet 和 SnapCenter vNet 不同，则应在 VNet 之间建立对等关系。
+
+
+* 步骤 *
+
+. 下载 link:media/scs_azure_firewall_config.sh["scs_azure_firewall_config.sh"] 脚本到本地系统。
+. 登录到 https://azure.microsoft.com/en-in/features/azure-portal/["Microsoft Azure 门户"^]。
+. 单击 image:screenshot-azure-cloud-shell.png["Azure Cloud Shell 的屏幕截图"] 打开云 Shell 并选择 Bash 控制台。
++
+.. 将脚本上传到 Azure Cloud Shell 。
+.. 分配运行脚本的权限。
++
+`chmod +x ./SCS_azure_firewall_config.sh`
+
+.. 运行脚本。
++
+` 。 /scs_azure_firewall_config.sh -fwsubid <Firewall_SubscriptionID> -fwname <Firewall_name> -fwrg <Firewall_Resource_group> -scssubid <SnapCenter_Service_SubscriptionID> -scsvnet <SnapCenter_Service_vNet_name> -scssubnet <SnapCenter_Service_Subnet _Net_Group> -SnapSC_Service_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM_SVM.<SnapCenter> -SC_Service_SVM_`
+
++
+
+NOTE: 如果尚未创建资源组，则此脚本将创建该资源组。创建连接器时，您可以使用同一资源组，以便所有与 SnapCenter 服务相关的资源都位于同一资源组中。
+
+
+
+
+
+* 结果 *
+
+* 已配置防火墙规则。
+* 此时将为 SnapCenter 服务创建一个资源组。
+* 此时将在 SnapCenter 服务资源组中创建路由表。
+* 此时将配置路由表规则。
+* 路由表已连接到子网。
+
+
+
+
+=== 连接到 HANA 系统
+
+SnapCenter 服务集群需要使用 HDBSQL 命令与用户网络中的 HANA 系统进行通信。需要允许使用各种网络架构在 SnapCenter 集群和 HANA 系统之间建立通信通道，例如：
+
+* 连接器和 SnapCenter 服务集群部署在与 HANA 系统相同的 vNet 中
+* 连接器和 SnapCenter 服务集群部署在与 HANA 系统不同的 vNet 中，并使用 vNet 对等在 2 个 vNet 之间建立通信。
+* 连接器和 SnapCenter 服务集群部署在与 HANA 系统不同的 vNet 中，并使用 VPN 网关在 2 个 vNet 之间建立通信。
+
+
+
+
+=== 安全组配置
+
+如果在 HANA 系统中配置了网络安全组（ Network Security Group ， NSG ），则应允许从 SnapCenter 服务的端口到 HANA 系统的端口进行入站通信，如用户存储密钥中所指定。
+
+* 协议：所有 TCP
+* 子网： SnapCenter AKS 集群子网
+* 用途：执行 HDBSQL 命令
+
+
+SnapCenter AKS 集群中运行的 HANA 服务支持与启用了 SSL 的 HANA 系统进行 SSL 通信。

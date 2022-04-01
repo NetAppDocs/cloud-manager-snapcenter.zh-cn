@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: reference-manage-dashboard-monitor-notification-snapcenter-service.html 
+keywords: view dashboard, monitor operations, email notification, snapcenter service, SAP HANA, jobs 
+summary: 您可以监控已执行作业的状态，接收电子邮件通知以及查看信息板。 
+---
+= 管理操作
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以监控已执行作业的状态，接收电子邮件通知以及查看信息板。
+
+
+
+== 监控作业
+
+单击 SnapCenter 服务页面上的 * 作业监控 * 以查看作业状态。作业监控页面将显示整体摘要并列出所有作业。
+
+然后，您可以单击 image:screenshot-anf-view-system.png["图标的屏幕截图，用于查看详细信息"] 对应于特定作业以查看详细信息。
+
+image:screenshot-anf-job-monitor.png["作业监控器页面的屏幕截图"]
+
+
+
+== 电子邮件通知
+
+默认情况下，对于失败的按需备份，计划的备份和还原操作，系统会发送电子邮件通知。只有具有 " 帐户管理员 " 角色的 Cloud Manager 用户才会收到此电子邮件。
+
+
+
+== 查看信息板
+
+单击 SnapCenter 服务页面上的 * 概述 * 以查看保护摘要，配置详细信息和作业状态。
+
+image:screenshot-anf-dashboard.png["信息板的屏幕截图"]

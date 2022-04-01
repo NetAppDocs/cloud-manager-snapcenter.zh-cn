@@ -1,0 +1,96 @@
+---
+sidebar: sidebar 
+permalink: task-create-backup-ondemand-policies-schedule-sap-hana.html 
+keywords: create, policies, backup policies, snapcenter service, SAP HANA, backup type, backup frequency, retention count, system-defined policies, on-demand backups, schedule backups 
+summary: 使用系统定义或自定义策略为 SAP HANA 系统创建按需备份或计划备份。 
+---
+= 备份 SAP HANA 系统
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用系统定义或自定义策略对 SAP HANA 系统执行按需备份或计划备份。SnapCenter 服务既支持基于快照的备份，也支持基于文件的备份。
+
+
+
+== 创建备份策略
+
+策略用于指定备份类型，备份频率，计划，保留类型，保留数量， 以及数据保护操作的其他特征。您可以使用 Cloud Manager UI 创建策略。
+
+默认情况下，可以使用两个系统定义的策略，分别用于基于快照的备份操作和基于文件的备份操作。
+
+* 步骤 *
+
+. 在 SnapCenter 服务页面上，单击 * 策略 * > * 添加 * 。
+. 在创建备份策略页面上，执行以下操作：
++
+.. 指定策略名称。
+.. 选择要使用此策略创建的备份类型。
+.. 指定备份名称。
++
+默认情况下会添加后缀时间戳。您可以选择备份名称中应包含的其他后缀，并定义后缀的显示顺序。
+
+.. 指定计划备份的计划频率以及开始和结束时间。
+.. 指定要保留的快照副本数或指定应保留快照副本的天数。
+
+
+. 单击 * 添加 * 。
+
+
+您可以通过单击来查看，编辑或删除策略 image:screenshot-anf-view-system.png["图标的屏幕截图，用于查看详细信息"] 与策略对应。
+
+
+
+== 创建按需备份
+
+通过关联策略或不关联任何策略来创建 SAP HANA 系统的按需备份。
+
+* 步骤 *
+
+. 在 SnapCenter 服务页面上，单击 * SAP HANA 系统 * 。
++
+此时将显示添加到 SnapCenter 服务的所有系统。
+
+. 单击 image:screenshot-anf-view-system.png["图标的屏幕截图，用于查看详细信息"] 对应于要保护的系统。
+. 单击 * 按需备份 * 。
+. 在按需备份页面上，执行以下操作之一：
++
+** 如果要将备份与策略关联，请选择该策略并单击 * 创建备份 * 。
+** 如果不希望将备份与策略关联，请执行以下操作：
++
+... 在策略字段中，选择 * 无 * 。
+... 选择备份类型。
++
+如果要备份非数据卷，则只能选择 * 基于 Snapshot * 作为备份类型。
+
+... 指定保留期限。
+... 单击 * 创建备份 * 。
+
+
+
+
+
+
+
+
+== 创建计划备份
+
+通过将策略与 SAP HANA 系统关联来创建计划备份。
+
+* 步骤 *
+
+. 在 SnapCenter 服务页面上，单击 * SAP HANA 系统 * 。
++
+此时将显示添加到 SnapCenter 服务的所有系统。
+
+. 单击 image:screenshot-anf-view-system.png["图标的屏幕截图，用于查看详细信息"] 对应于要保护的系统。
+. 单击 * 保护 * 。
+. 选择要用于保护 SAP HANA 系统的策略。
+. 单击 * 保护 * 。
+
+
+* 查找更多信息 *https://docs.netapp.com/us-en/netapp-solutions-sap/backup/saphana-backup-anf-overview.html["使用 SnapCenter 服务在 Azure NetApp Files 上执行 SAP HANA 备份和恢复"]
