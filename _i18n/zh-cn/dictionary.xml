@@ -151,7 +151,6 @@
   <block id="9e4cfd7ef75c01c5ac965cb1ba1bac37" category="list-text">将流量从防火墙公有 IP 地址转发到 Internet 。</block>
   <block id="4bef0203103722e65f656f8c35646b87" category="list-text">将路由表附加到子网。</block>
   <block id="7ebcb503cdda50b6cfafe4b188689a5c" category="inline-link">连接器的网络连接要求</block>
-  <block id="d9b18cee7a313ead74dd7a023666ffa9" category="paragraph">有关 Cloud Manager Connector 的网络要求的信息，请参见<block ref="57f818e1db49e293a718988eb6d733d8" category="inline-link-rx"></block>。</block>
   <block id="ca3fae953ace3814f44551f58d2984bf" category="section-title">Azure 防火墙配置</block>
   <block id="bd114f893a39a34dfb70d101f6cc8d27" category="paragraph">如果要在 Azure 防火墙后启用 SnapCenter 服务，应执行以下操作。</block>
   <block id="d428ebb7ac02e1484781b38a799a4f99" category="paragraph">* 您需要的内容 *</block>
@@ -361,9 +360,7 @@
   <block id="63785c950a9f3cb1e82193ec1f7e49ee" category="inline-link">注册到 NetApp Cloud Central</block>
   <block id="5970bd5da21d70901770347c11bbaaaf" category="inline-link">登录到 Cloud Manager</block>
   <block id="ac252743de820aac9183d9f76d4bed67" category="inline-link">NetApp 帐户</block>
-  <block id="448b4179e9081f9b09ecb407bfc3d375" category="paragraph">您应该<block ref="1f33e40b7cbc500b81a81880d0472d5d" category="inline-link-rx"></block>，<block ref="85362a42d667fef5ad89f333e6ef6863" category="inline-link-rx"></block>，然后设置<block ref="e21a9fac1d28e9fb068a4b77b13a00a9" category="inline-link-rx"></block>。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">了解更多信息。</block>
-  <block id="1a1fb24e7da5a3ddceed77de5f61f530" category="paragraph">只有帐户管理员才能部署 SnapCenter 服务。但是，帐户管理员和 SnapCenter 管理员可以执行不同的操作。<block ref="f16792f5e43bceae84f18b6113aacc62" category="inline-link-rx"></block></block>
   <block id="f908c36705844b4672f06b0e10ee4838" category="paragraph">您应确保所有 <block ref="fa07f7c80e3b9954be9b34a08d085342" category="inline-link-macro-rx"></block> 要创建连接器并启用 SnapCenter 服务，需要满足此要求。</block>
   <block id="9ee90c6524cb5493257b2167abc94c5c" category="inline-link-macro">在 Azure 中为 SnapCenter 服务创建连接器</block>
   <block id="ef2af854781ce71784c836ac55ee5298" category="paragraph">您应该 <block ref="4d9e1737fd40621293357dd1e83461e4" category="inline-link-macro-rx"></block>。</block>
@@ -412,7 +409,6 @@
   <block id="a266f6237722f9b5a4130ef692c55210" category="doc">在 Azure 中为 SnapCenter 服务创建连接器</block>
   <block id="fc41b305b8f564b87007b7d9f6ccc823" category="paragraph">客户管理员应先部署 Connector ，然后才能使用 Cloud Manager 功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。</block>
   <block id="65803824e330be5dda78189602241b9d" category="inline-link">从 Azure Marketplace 创建连接器</block>
-  <block id="34f79c41d25181a7b13c9385fbd7ea59" category="paragraph">默认情况下，您可以从 Azure Marketplace 在 Azure 中创建 Connector 。执行步骤至时<block ref="02cd17b9f9a29ca67113e5669fd9247e" category="inline-link-rx"></block>，您应记住以下几点：</block>
   <block id="e77ff8b764d001fc5632f5914fa1efbb" category="list-text">无论在何处指定适用于 Cloud Volumes ONTAP 的 Cloud Manager ， SnapCenter 服务都可以使用这种方式。</block>
   <block id="3407e20e2dda7ef741cae11aedbebc06" category="list-text">对于 Cloud Manager Name ，请指定您的 Connector VM 名称以更好地进行标识。此名称将在 Cloud Manager UI 中显示为连接器名称。</block>
   <block id="4a89c5f604f86d04b1924294cbcb21d4" category="list-text">如果您在未配置公有 IP 的情况下配置了连接器或配置了防火墙，则应使用跳转主机连接到连接器计算机。</block>
@@ -420,7 +416,6 @@
   <block id="42b868e2104121f766618462fe94607c" category="paragraph">如果您有<block ref="76b48a38c537fcda47ae8e3a8eb5b6b6" category="inline-link-rx"></block> 在 Azure Active Directory 中启用，或者如果租户管理员可以提供同意，您可以从 Cloud Manager UI 创建 Connector 。</block>
   <block id="4784e3f9b0f7b16fd2b7e96dba490438" category="section-title">已启用用户同意</block>
   <block id="036a55993c4eaf06878d19dff8ddb328" category="inline-link">从 Cloud Manager 创建 Connector</block>
-  <block id="11cf5fe8d9e595e932847c44809b0452" category="paragraph">如果在 Azure Active Directory 中启用了用户同意，<block ref="9aadc2506edf0d025dd3c0665f0cff70" category="inline-link-rx"></block>。</block>
   <block id="6ef901b02394aca9745109e7a2528dd0" category="section-title">已禁用用户同意</block>
   <block id="0da4a1a8618ceded22f25810a530ebc1" category="inline-link">请求管理员同意</block>
   <block id="e4ee08261df520a9645e6a5a23eaf1a8" category="list-text">如果在 Active Directory 中配置了管理员同意工作流，则应执行此操作<block ref="6d8cf01151ef5a360f3c449b4a270ed1" category="inline-link-rx"></block>。</block>
@@ -431,7 +426,6 @@
   <block id="598f1da796ed62d80dddd63cb8775774" category="list-text">请租户管理员在浏览器中运行此 URL ，并征得其同意。</block>
   <block id="3cc2e72844bf5927e62f9110eb43bd87" category="paragraph">管理员可以忽略显示的错误</block>
   <block id="e7cf5a691d8b98575b52980ab32d1529" category="inline-link">从 Cloud Manager 创建 Connector</block>
-  <block id="8ae39ac91e2944d49fd9febe7f84103c" category="list-text"><block ref="77b641a6e84a3fa8d2e9c3859683b592" category="inline-link-rx"></block>。</block>
   <block id="1f1b6b890eecc430a090f1c146a38865" category="admonition">要连接到计算机，需要用户名和密码或在创建 Connector 时提供的密钥</block>
   <block id="9998e542affb998a1071422d2fa357a2" category="summary">Cloud Manager 中启用的 SnapCenter 服务可为 Azure NetApp Files 上的 SAP HANA 系统提供高效，应用程序一致且基于策略的备份和还原。</block>
   <block id="62b15c6416b971695b696987cd557ace" category="doc">SnapCenter 服务文档</block>
@@ -454,4 +448,10 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
+  <block id="9f56f8bbc28af80cd3cf3d7228017568" category="paragraph">有关 Cloud Manager Connector 的网络要求的信息，请参见<block ref="7da03693753a0c0ef80665697b2bb493" category="inline-link-rx"></block>。</block>
+  <block id="0c79dd8db9f5b2ef65ce5b7b099a8230" category="paragraph">您应该<block ref="a421814eb6c01eb6ce8e83ff79157c0f" category="inline-link-rx"></block>，<block ref="47131f7a795cd1802b4efb27c1c3b1d1" category="inline-link-rx"></block>，然后设置<block ref="4aa1c3f57d195559cab186a77b7b9ae0" category="inline-link-rx"></block>。</block>
+  <block id="e231ca02da01dbea5a879a5606ce215a" category="paragraph">只有帐户管理员才能部署 SnapCenter 服务。但是，帐户管理员和 SnapCenter 管理员可以执行不同的操作。<block ref="8fa6d8cd701869ab47ef7e41561c184d" category="inline-link-rx"></block></block>
+  <block id="45ab6bb46fca37e62de63fe69b1001b7" category="paragraph">默认情况下，您可以从 Azure Marketplace 在 Azure 中创建 Connector 。执行步骤至时<block ref="c7df1b09d8813160eb999d0e84d790d1" category="inline-link-rx"></block>，您应记住以下几点：</block>
+  <block id="66927997372367201f4dc39b4aff5954" category="paragraph">如果在 Azure Active Directory 中启用了用户同意，<block ref="01fb2668fa31d38aaab027973d968923" category="inline-link-rx"></block>。</block>
+  <block id="c4f2841f3455964464167d0edd8574d4" category="list-text"><block ref="7b8983978fe4cc64f5f87a5d56ffac25" category="inline-link-rx"></block>。</block>
 </blocks>

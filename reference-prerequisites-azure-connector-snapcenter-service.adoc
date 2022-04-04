@@ -133,7 +133,7 @@ NOTE: 如果您使用的是 Azure 防火墙，则可以使用脚本执行这些�
 . 将路由表附加到子网。
 
 
-有关 Cloud Manager Connector 的网络要求的信息，请参见 https://docs.netapp.com/us-en/cloud-manager-connector/reference-networking-cloud-manager.html["连接器的网络连接要求"^]。
+有关 Cloud Manager Connector 的网络要求的信息，请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html["连接器的网络连接要求"^]。
 
 
 
