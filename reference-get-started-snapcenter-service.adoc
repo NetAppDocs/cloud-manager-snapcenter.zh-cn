@@ -6,6 +6,7 @@ summary: 部署 SnapCenter 服务和保护数据的任务。
 ---
 = 入门
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

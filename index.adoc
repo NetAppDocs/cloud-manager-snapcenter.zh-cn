@@ -7,6 +7,7 @@ summary: Cloud Manager 中启用的 SnapCenter 服务可为 Azure NetApp Files �
 ---
 = SnapCenter 服务文档
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

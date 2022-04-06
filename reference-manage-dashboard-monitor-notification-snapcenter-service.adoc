@@ -6,6 +6,7 @@ summary: 您可以监控已执行作业的状态，接收电子邮件通知以�
 ---
 = 管理操作
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 在创建连接器和启用 SnapCenter 服务之前，请确保满足�
 ---
 = 创建连接器和启用 SnapCenter 服务的前提条件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 使用系统定义或自定义策略为 SAP HANA 系统创建按需备�
 ---
 = 备份 SAP HANA 系统
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

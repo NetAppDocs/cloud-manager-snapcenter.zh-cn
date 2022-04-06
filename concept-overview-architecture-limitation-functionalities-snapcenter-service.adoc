@@ -6,6 +6,7 @@ summary: SnapCenter 服务可为在 NetApp ® 云存储上运行的应用程序�
 ---
 = 了解 SnapCenter 服务
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

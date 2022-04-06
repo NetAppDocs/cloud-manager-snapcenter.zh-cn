@@ -6,6 +6,7 @@ summary: 安装 HDBSQL 客户端以对 SAP HANA 数据库执行数据保护操�
 ---
 = 安装 HDBSQL 客户端
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

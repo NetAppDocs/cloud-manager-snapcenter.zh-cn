@@ -6,6 +6,7 @@ summary: 使用 SnapCenter 管理器 UI 启用 Cloud 服务。
 ---
 = 为 Azure NetApp Files 启用 SnapCenter 服务
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

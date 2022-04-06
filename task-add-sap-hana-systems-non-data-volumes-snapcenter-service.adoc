@@ -6,6 +6,7 @@ summary: 添加 SAP HANA 系统，然后添加非数据卷。
 ---
 = 添加 SAP HANA 系统
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

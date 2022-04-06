@@ -6,6 +6,7 @@ summary: 从该系统的备份之一还原 SAP HANA 系统。
 ---
 = 还原 SAP HANA 系统
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
