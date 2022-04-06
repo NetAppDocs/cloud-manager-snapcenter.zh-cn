@@ -15,7 +15,7 @@ summary: 在 Azure 中为 SnapCenter 服务创建连接器。
 [role="lead"]
 客户管理员应先部署 Connector ，然后才能使用 Cloud Manager 功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。
 
-默认情况下，您可以从 Azure Marketplace 在 Azure 中创建 Connector 。执行步骤至时 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-azure-mktp.html["从 Azure Marketplace 创建连接器"^]，您应记住以下几点：
+默认情况下，您可以从 Azure Marketplace 在 Azure 中创建 Connector 。执行步骤至时 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-azure-mktp.html["从 Azure Marketplace 创建连接器"]，您应记住以下几点：
 
 * 无论在何处指定适用于 Cloud Volumes ONTAP 的 Cloud Manager ， SnapCenter 服务都可以使用这种方式。
 * 对于 Cloud Manager Name ，请指定您的 Connector VM 名称以更好地进行标识。此名称将在 Cloud Manager UI 中显示为连接器名称。
@@ -28,7 +28,7 @@ summary: 在 Azure 中为 SnapCenter 服务创建连接器。
 
 == 已启用用户同意
 
-如果在 Azure Active Directory 中启用了用户同意， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["从 Cloud Manager 创建 Connector"^]。
+如果在 Azure Active Directory 中启用了用户同意， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["从 Cloud Manager 创建 Connector"]。
 
 
 
@@ -52,7 +52,7 @@ NOTE: 将客户端 ID 指定为 _989efff4-9a9e-46fa-9f17-de39e15714f9_ 。这是
 
 
 
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["从 Cloud Manager 创建 Connector"^]。
+. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["从 Cloud Manager 创建 Connector"]。
 
 
 

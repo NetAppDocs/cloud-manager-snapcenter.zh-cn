@@ -33,4 +33,4 @@ summary: 从该系统的备份之一还原 SAP HANA 系统。
 
 IMPORTANT: 还原数据库后，如果您使用 HANA Studio 对 SAP HANA 系统执行时间点恢复，则可能会还原 SnapCenter 服务根据保留设置删除的数据备份目录条目。如果由于恢复操作而还原了已删除的数据备份目录条目，则 SnapCenter 服务将无法检测和删除这些条目。这可能会导致 SnapCenter 服务无法正确清理日志目录。您可以验证 SnapCenter 服务中的备份条目，以确定哪些所有数据备份目录条目是新还原的，并手动删除这些条目。
 
-* 查找更多信息 *https://docs.netapp.com/us-en/netapp-solutions-sap/backup/saphana-backup-anf-overview.html["使用 SnapCenter 服务在 Azure NetApp Files 上执行 SAP HANA 备份和恢复"]
+* 查找更多信息 *https://docs.netapp.com/us-en/netapp-solutions-sap/backup/saphana-backup-anf-overview.html["使用 SnapCenter 服务在 Azure NetApp Files 上执行 SAP HANA 备份和恢复"^]

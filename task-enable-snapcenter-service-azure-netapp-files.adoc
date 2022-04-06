@@ -18,7 +18,7 @@ summary: 使用 SnapCenter 管理器 UI 启用 Cloud 服务。
 * 您需要的内容 *
 
 * 您应在 Azure 订阅中注册 "microsoft.ContainerService" 资源提供程序。有关信息，请参见 https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider["如何注册资源提供程序"^]。
-* 您应确保所有 link:prerequisites-azure-connector-snapcenter-service.html["前提条件"] 已满足。
+* 您应确保所有 link:reference-prerequisites-azure-connector-snapcenter-service.html["前提条件"] 已满足。
 
 
 * 关于此任务 *
@@ -174,7 +174,7 @@ IMPORTANT: 登录帐户的凭据不会存储在 SnapCenter 服务的任何位置
 您应将 SnapCenter_Deployment_Rol2.json 文件中的 <subscription_ID> 替换为 Azure 订阅 ID 。
 
 . 在 Connector 的 vNet 或更高版本范围内将角色分配给登录帐户。
-. 如果您有 link:prerequisites-azure-connector-snapcenter-service.html#firewall-configuration["已配置防火墙"]，使用创建自定义角色 link:media/SnapCenter-Deployment-Role3.json["SnapCenter-Deployment-Role3.json"] 文件
+. 如果您有 link:reference-prerequisites-azure-connector-snapcenter-service.html#firewall-configuration["已配置防火墙"]，使用创建自定义角色 link:media/SnapCenter-Deployment-Role3.json["SnapCenter-Deployment-Role3.json"] 文件
 +
 您应将 SnapCenter_Deployment_Role3.json 文件中的 <subscription_ID> 替换为 Azure 订阅 ID 。
 

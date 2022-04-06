@@ -93,4 +93,4 @@ summary: 使用系统定义或自定义策略为 SAP HANA 系统创建按需备�
 . 单击 * 保护 * 。
 
 
-* 查找更多信息 *https://docs.netapp.com/us-en/netapp-solutions-sap/backup/saphana-backup-anf-overview.html["使用 SnapCenter 服务在 Azure NetApp Files 上执行 SAP HANA 备份和恢复"]
+* 查找更多信息 *https://docs.netapp.com/us-en/netapp-solutions-sap/backup/saphana-backup-anf-overview.html["使用 SnapCenter 服务在 Azure NetApp Files 上执行 SAP HANA 备份和恢复"^]

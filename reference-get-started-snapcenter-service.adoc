@@ -16,31 +16,31 @@ summary: 部署 SnapCenter 服务和保护数据的任务。
 开始使用 SnapCenter 服务，只需几个步骤即可保护您的数据。
 
 [role="quick-margin-para"]
-您应该 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-signing-up.html["注册到 NetApp Cloud Central"^]， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["登录到 Cloud Manager"^]，然后设置 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-setting-up-netapp-accounts.html["NetApp 帐户"^]。
+您应该 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-signing-up.html["注册到 NetApp Cloud Central"]， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["登录到 Cloud Manager"]，然后设置 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-setting-up-netapp-accounts.html["NetApp 帐户"]。
 
 [role="quick-margin-para"]
-只有帐户管理员才能部署 SnapCenter 服务。但是，帐户管理员和 SnapCenter 管理员可以执行不同的操作。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["了解更多信息。"^]
+只有帐户管理员才能部署 SnapCenter 服务。但是，帐户管理员和 SnapCenter 管理员可以执行不同的操作。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["了解更多信息。"]
 
 [role="quick-margin-para"]
-您应确保所有 link:prerequisites-azure-connector-snapcenter-service.html["前提条件"] 要创建连接器并启用 SnapCenter 服务，需要满足此要求。
+您应确保所有 link:reference-prerequisites-azure-connector-snapcenter-service.html["前提条件"] 要创建连接器并启用 SnapCenter 服务，需要满足此要求。
 
 [role="quick-margin-para"]
-您应该 link:create-azure-connector-user-consent-snapcenter-service.html["在 Azure 中为 SnapCenter 服务创建连接器"]。
+您应该 link:task-create-azure-connector-user-consent-snapcenter-service.html["在 Azure 中为 SnapCenter 服务创建连接器"]。
 
 [role="quick-margin-para"]
 如果您的连接器满足所有前提条件，则可以使用该连接器。
 
 [role="quick-margin-para"]
-在 Cloud Manager 中创建 Azure NetApp Files 工作环境，以创建和管理 NetApp 帐户，容量池，卷和快照。 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["了解更多信息。"^]
+在 Cloud Manager 中创建 Azure NetApp Files 工作环境，以创建和管理 NetApp 帐户，容量池，卷和快照。 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["了解更多信息。"]
 
 [role="quick-margin-para"]
-您应该 link:enable-snapcenter-service-azure-netapp-files.html["启用 SnapCenter 服务"] 使用 Cloud Manager UI 。启用 SnapCenter 服务后，将创建托管 SnapCenter 服务的 Azure Kubernetes Service （ AKS ）集群。
+您应该 link:task-enable-snapcenter-service-azure-netapp-files.html["启用 SnapCenter 服务"] 使用 Cloud Manager UI 。启用 SnapCenter 服务后，将创建托管 SnapCenter 服务的 Azure Kubernetes Service （ AKS ）集群。
 
 [role="quick-margin-para"]
-您应该 link:install-hdbsql-client-snapcenter-service.html["安装 HDBSQL 客户端"] 对 SAP HANA 数据库执行数据保护操作。HDBSQL 客户端用于与 SAP HANA 系统进行通信。
+您应该 link:task-install-hdbsql-client-snapcenter-service.html["安装 HDBSQL 客户端"] 对 SAP HANA 数据库执行数据保护操作。HDBSQL 客户端用于与 SAP HANA 系统进行通信。
 
 [role="quick-margin-para"]
-您应手动执行此操作 link:add-sap-hana-systems-non-data-volumes-snapcenter-service.html["添加 SAP HANA 系统"]。
+您应手动执行此操作 link:task-add-sap-hana-systems-non-data-volumes-snapcenter-service.html["添加 SAP HANA 系统"]。
 
 [role="quick-margin-para"]
-然后，您可以 link:create-backup-ondemand-policies-schedule-sap-hana.html["备份 SAP HANA 系统"] 使用系统定义的策略或自定义策略。如果发生数据丢失，您可以 link:restore-sap-hana-systems.html["还原 SAP HANA 系统"] 使用该系统的备份。
+然后，您可以 link:task-create-backup-ondemand-policies-schedule-sap-hana.html["备份 SAP HANA 系统"] 使用系统定义的策略或自定义策略。如果发生数据丢失，您可以 link:restore-sap-hana-systems.html["还原 SAP HANA 系统"] 使用该系统的备份。

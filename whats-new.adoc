@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
-summary: 了解 <service> 中的新增功能。 
+summary: 了解 SnapCenter 服务的新增功能。 
 ---
 = SnapCenter 服务的新增功能
 :hardbreaks:
@@ -41,6 +41,6 @@ link:concept-overview-architecture-limitation-functionalities-snapcenter-service
 
 * 您应创建一个连接器，启用 SnapCenter 服务，添加 SAP HANA 系统，然后执行备份和还原操作。
 +
-link:task-get-started-snapcenter-service.html["入门"]
+link:reference-get-started-snapcenter-service.html["入门"]
 
 
